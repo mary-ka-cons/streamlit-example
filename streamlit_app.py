@@ -15,9 +15,9 @@ df = pd.DataFrame(
     {
         "Team name": ["Roadmap", "Extras", "Issues"],
         "Score": [1,2,3],
-        "Logo":['file:///Users/marie-camillevergez/Documents/PERSO/PROJETS/Tests%20Streamlit/luigi.png',
-                'file:///Users/marie-camillevergez/Documents/PERSO/PROJETS/Tests%20Streamlit/luigi.png',
-               'file:///Users/marie-camillevergez/Documents/PERSO/PROJETS/Tests%20Streamlit/luigi.png']
+        "Logo":['https://i.pinimg.com/originals/7b/47/00/7b47006350fc85297b8a63417eacd0a3.png',
+                'https://i.pinimg.com/originals/7b/47/00/7b47006350fc85297b8a63417eacd0a3.png',
+               'https://i.pinimg.com/originals/7b/47/00/7b47006350fc85297b8a63417eacd0a3.png']
     }
 )
 st.dataframe(
