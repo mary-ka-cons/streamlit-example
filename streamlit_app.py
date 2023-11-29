@@ -5,8 +5,7 @@ import streamlit as st
 
 st.set_page_config(
     page_title="Contest",
-    page_icon="✅",
-    layout="wide",
+    page_icon="🧿",
 )
 
 
