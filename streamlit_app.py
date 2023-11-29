@@ -28,7 +28,7 @@ st.dataframe(
             help="Number of stars on GitHub",
             format="%d ⭐",
         ),
-        "Logo": st.column_config.ImageColumn("Logo")
+        "Logo": st.column_config.ImageColumn(width = "large")
     },
     hide_index=True,
 )
