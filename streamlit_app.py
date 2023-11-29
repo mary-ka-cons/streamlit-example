@@ -11,15 +11,13 @@ st.set_page_config(
 # dashboard title
 st.title("Live Results")
 
-
-d = {'Team name': ['Name 1', 'Name 2'], 'Team logo': ['logourl1', 'logourl2']}
-df = pd.DataFrame(data=d)
-st.dataframe(df) 
-
 df = pd.DataFrame(
     {
         "Team name": ["Roadmap", "Extras", "Issues"],
-        "Score": [1,2,3]
+        "Score": [1,2,3],
+        "Logo":['file:///Users/marie-camillevergez/Documents/PERSO/PROJETS/Tests%20Streamlit/luigi.png',
+                'file:///Users/marie-camillevergez/Documents/PERSO/PROJETS/Tests%20Streamlit/luigi.png',
+               'file:///Users/marie-camillevergez/Documents/PERSO/PROJETS/Tests%20Streamlit/luigi.png']
     }
 )
 st.dataframe(
@@ -29,7 +27,8 @@ st.dataframe(
             "Github Stars",
             help="Number of stars on GitHub",
             format="%d ⭐",
-        )
+        ),
+        "Logo": st.column_config.ImageColumn("Avatar")
     },
     hide_index=True,
 )
