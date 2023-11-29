@@ -19,21 +19,17 @@ st.dataframe(df)
 df = pd.DataFrame(
     {
         "Team name": ["Roadmap", "Extras", "Issues"],
-        "stars": [random.randint(0, 1000) for _ in range(3)],
-        "views_history": [[random.randint(0, 5000) for _ in range(30)] for _ in range(3)],
+        "Score": [1,2,3]
     }
 )
 st.dataframe(
     df,
     column_config={
-        "stars": st.column_config.NumberColumn(
+        "Score": st.column_config.NumberColumn(
             "Github Stars",
             help="Number of stars on GitHub",
             format="%d ⭐",
-        ),
-        "views_history": st.column_config.LineChartColumn(
-            "Views (past 30 days)", y_min=0, y_max=5000
-        ),
+        )
     },
     hide_index=True,
 )
