@@ -8,10 +8,9 @@ from PIL import Image
 ### Images
 img = ["Images/mario.png", "Images/luigi.png"]
 
-#for i in range(len(img)):
-#    st.image([i])
+for i in range(len(img)):
+    st.image(img[i])
 
-st.image(img[1])
 
 ### Set-Up Streamlit
 ########### Set the tab name
