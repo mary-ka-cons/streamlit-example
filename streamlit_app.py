@@ -10,6 +10,9 @@ img = Image.open("/mario.jpg")
 st.image(img)
 
 
+
+
+
 ### Set-Up Streamlit
 ########### Set the tab name
 st.set_page_config(
