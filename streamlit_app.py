@@ -6,10 +6,8 @@ import streamlit as st
 from PIL import Image
 
 ### Images
-img = Image.open("/mario.jpg")
+img = Image.open("/Users/marie-camillevergez/Documents/GitHub/streamlit-example/mario.png")
 st.image(img)
-
-
 
 
 
