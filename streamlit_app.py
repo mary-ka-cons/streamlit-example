@@ -24,6 +24,7 @@ st.set_page_config(
     page_icon="🧿",
 )
 
+
 ########### Set the page title
 st.title("Live Results")
 
