@@ -6,10 +6,10 @@ import streamlit as st
 from PIL import Image
 
 ### Images
-img = list("Images/mario.png", "Images/luigi.png")
+img = ["Images/mario.png", "Images/luigi.png"]
 
-for i in len(img):
-    st.image(img[i])
+for i in range(len(img)):
+    st.image[i]
 
 
 
