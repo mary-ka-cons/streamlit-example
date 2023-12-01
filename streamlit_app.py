@@ -16,7 +16,7 @@ df = pd.DataFrame(
         "Team name": ["Roadmap", "Extras", "Issues"],
         "Score": [1,2,3],
         "Logo":['https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1ebab919-1015-421b-ac5a-dc53da375adc/dfw9wdm-2613099c-d768-473c-b80a-54b778d403e6.png/v1/fill/w_492,h_507/mario_kart_tour___png_by_jt0328_dfw9wdm-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTA3IiwicGF0aCI6IlwvZlwvMWViYWI5MTktMTAxNS00MjFiLWFjNWEtZGM1M2RhMzc1YWRjXC9kZnc5d2RtLTI2MTMwOTljLWQ3NjgtNDczYy1iODBhLTU0Yjc3OGQ0MDNlNi5wbmciLCJ3aWR0aCI6Ijw9NDkyIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.ssflZUYOdPvvWMEhHXyQlioiznMYSzrqs4jCmJgr-yY',
-                'https://drive.google.com/drive/folders/1vKD7OhGQPIe7gWbZHOblGVUlVSRlzq0o',
+                'https://github.com/mary-ka-cons/streamlit-example/blob/master/mario.png',
                'https://i.pinimg.com/originals/7b/47/00/7b47006350fc85297b8a63417eacd0a3.png']
     }
 )
