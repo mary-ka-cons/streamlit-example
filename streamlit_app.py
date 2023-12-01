@@ -7,7 +7,9 @@ from PIL import Image
 
 ### Images
 img = list("Images/mario.png", "Images/luigi.png")
-st.image(img)
+
+for i in len(img):
+    st.image(img(i))
 
 
 
