@@ -6,8 +6,8 @@ import streamlit as st
 from PIL import Image
 
 ### Images
-#img = Image.open("mario.png")
-st.image(["Images/mario.png", "Images/luigi.png"])
+img = list("Images/mario.png", "Images/luigi.png")
+st.image(img)
 
 
 
