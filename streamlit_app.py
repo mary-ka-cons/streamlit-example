@@ -22,6 +22,7 @@ from st_aggrid import AgGrid
 st.set_page_config(
     page_title="Contest",
     page_icon="🧿",
+    
 )
 
 
