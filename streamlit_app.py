@@ -27,7 +27,7 @@ df = pd.DataFrame(
     {
         "Team name": ["Roadmap", "Extras"],
         "Score": [1,2],
-        "Logo":["Images/mario.png", "Images/luigi.png"]
+        "Logo":st.image(["Images/mario.png", "Images/luigi.png"])
     }
 )
 st.dataframe(
