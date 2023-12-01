@@ -7,7 +7,7 @@ from PIL import Image
 
 ### Images
 #img = Image.open("mario.png")
-st.image("Images/mario.png")
+st.image("Images/mario.png", "Images/luigi.png")
 
 
 
