@@ -1,3 +1,6 @@
+pip install streamlit-aggrid
+
+
 ### Packages
 import altair as alt
 import numpy as np
