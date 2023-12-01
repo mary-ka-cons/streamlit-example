@@ -1,16 +1,26 @@
+### Packages
 import altair as alt
 import numpy as np
 import pandas as pd
 import streamlit as st
+from PIL import Image
 
+### Images
+img = Image.open("mario.jpg")
+st.image(img)
+
+
+### Set-Up Streamlit
+########### Set the tab name
 st.set_page_config(
     page_title="Contest",
     page_icon="🧿",
 )
 
-# dashboard title
+########### Set the page title
 st.title("Live Results")
 
+########### Build the app
 df = pd.DataFrame(
     {
         "Team name": ["Roadmap", "Extras", "Issues"],
