@@ -9,8 +9,7 @@ from PIL import Image
 img = ["Images/mario.png", "Images/luigi.png"]
 
 for i in range(len(img)):
-    st.image[i]
-
+    st.image([i])
 
 
 ### Set-Up Streamlit
