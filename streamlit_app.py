@@ -39,7 +39,7 @@ st.dataframe(
             format="%d ⭐",
         ),
         #"Logo": st.column_config.ImageColumn(width = "large")
-        "Logo": st.image(["Images/mario.png", "Images/luigi.png"])
+        #"Logo": st.image(["Images/mario.png", "Images/luigi.png"])
     },
     hide_index=True,
 )
