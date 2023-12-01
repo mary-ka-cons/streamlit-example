@@ -4,6 +4,8 @@ import numpy as np
 import pandas as pd
 import streamlit as st
 from PIL import Image
+from st_aggrid import AgGrid
+
 
 ### Images
 #img = ["Images/mario.png", "Images/luigi.png"]
@@ -27,19 +29,9 @@ df = pd.DataFrame(
     {
         "Team name": ["Roadmap", "Extras"],
         "Score": [1,2],
-        "Logo":st.image(["Images/mario.png", "Images/luigi.png"])
+        "Logo":["Images/mario.png", "Images/luigi.png"]
     }
 )
-st.dataframe(
-    df,
-    column_config={
-        "Score": st.column_config.NumberColumn(
-            "Github Stars",
-            help="Number of stars on GitHub",
-            format="%d ⭐",
-        ),
-        "Logo": st.column_config.ImageColumn(width = "large")
-        #"Logo": st.image(["Images/mario.png", "Images/luigi.png"])
-    },
-    hide_index=True,
-)
+
+AgGrid(df)
+
