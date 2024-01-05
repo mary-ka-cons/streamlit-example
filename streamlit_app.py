@@ -26,17 +26,15 @@ def main():
     }
     df = pd.DataFrame(data)
 
-    # Stylisation du DataFrame pour masquer l'index et les bordures
-    styled_df = df.style.hide_index().set_table_styles([
-        {'selector': 'table', 'props': [('border-collapse', 'collapse'), ('border', 'none')]},
-        {'selector': 'th, td', 'props': [('border', 'none'), ('padding', '10px'), ('text-align', 'left')]}
-    ])
+    # Supprimer l'index
+    df.index = [""] * len(df)
 
-    # Affichage du DataFrame stylisé dans une table
-    st.write(styled_df, unsafe_allow_html=True)
+    # Affichage des résultats dans une table
+    st.table(df)
 
 if __name__ == "__main__":
     main()
+
 
 
 
