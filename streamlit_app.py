@@ -15,15 +15,24 @@
 import streamlit as st
 import pandas as pd
 
+# Images
+img = ["Images/mario.png", "Images/luigi.png", "Images/luigi.png", "Images/luigi.png"]
+
+for i in range(len(img)):
+    st.image(img[i])
+
 # Données d'exemple (remplacez-les par vos propres données)
 data = {
     'Équipe': ['Équipe A', 'Équipe B', 'Équipe C', 'Équipe D'],
     'Résultat (%)': [75, 89, 92, 68],
-    'Image': ['Images/mario.png', 'Images/mario.png', 'Images/mario.png', 'Images/mario.png'],
 }
 
 # Créer un DataFrame Pandas
 df = pd.DataFrame(data)
+
+df['Image']=[]
+for i in range(len(img)):
+    df['Image'][i] = st.image(img[i])
 
 # Tri du DataFrame par classement
 df = df.sort_values(by='Résultat (%)', ascending=False).reset_index(drop=True)
