@@ -26,26 +26,19 @@ def main():
     }
     df = pd.DataFrame(data)
 
-    # Stylisation de la table pour ne pas afficher d'index et de bordures
-    st.markdown("""
-        <style>
-            table {
-                border-collapse: collapse;
-                width: 100%;
-            }
-            th, td {
-                border: none;
-                padding: 10px;
-                text-align: left;
-            }
-        </style>
-    """, unsafe_allow_html=True)
+    # Stylisation du DataFrame pour masquer l'index et les bordures
+    styled_df = df.style.hide_index().set_table_styles([
+        {'selector': 'table', 'props': [('border-collapse', 'collapse'), ('border', 'none')]},
+        {'selector': 'th, td', 'props': [('border', 'none'), ('padding', '10px'), ('text-align', 'left')]}
+    ])
 
-    # Affichage des résultats dans une table sans index et sans bordures
-    st.table(df.style.hide_index())
+    # Affichage du DataFrame stylisé dans une table
+    st.write(styled_df, unsafe_allow_html=True)
 
 if __name__ == "__main__":
     main()
+
+
 
 
 
