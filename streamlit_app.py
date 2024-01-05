@@ -33,7 +33,7 @@ def main():
 
 def afficher_equipe(equipe):
     # Stylisation du texte en bleu et en gras
-    couleur = 'blue' if equipe['Résultat (%)'] == 20 else 'red'
+    couleur = 'blue' #if equipe['Résultat (%)'] == 20 else 'red'
     resultat_stylise = f"<span style='color: {couleur}; font-weight: bold;'>{equipe['Résultat (%)']}%</span>"
     st.write(f"**{equipe['Nom']}** - Résultat : {resultat_stylise}", unsafe_allow_html=True)
 
