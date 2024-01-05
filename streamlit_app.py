@@ -19,15 +19,11 @@ def main():
     # Titre de l'application
     st.title("Comparaison des résultats de deux équipes")
 
-    # Collecte des données d'utilisateur
-    equipe1 = st.text_input("Nom de l'équipe 1:")
-    resultat1 = st.slider("Résultat en pourcentage pour l'équipe 1:", min_value=0, max_value=100, value=50)
-
-    equipe2 = st.text_input("Nom de l'équipe 2:")
-    resultat2 = st.slider("Résultat en pourcentage pour l'équipe 2:", min_value=0, max_value=100, value=50)
-
     # Création d'un DataFrame avec les données
-    data = {'Équipe': [equipe1, equipe2], 'Résultat (%)': [resultat1, resultat2]}
+    data = {
+        'Équipe': ['Équipe 1', 'Équipe 2'],
+        'Résultat (%)': [60, 75],
+    }
     df = pd.DataFrame(data)
 
     # Stylisation de la table pour ne faire apparaître aucune bordure
@@ -49,6 +45,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
