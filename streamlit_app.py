@@ -19,20 +19,27 @@ def main():
     st.title("Comparaison des résultats des équipes")
 
     # Données des équipes
-    equipe_a = {'Nom': 'Équipe A', 'Résultat (%)': 20}
-    equipe_b = {'Nom': 'Équipe B', 'Résultat (%)': 40}
+    equipes = [
+        {'Nom': 'Équipe A', 'Résultat (%)': 20},
+        {'Nom': 'Équipe B', 'Résultat (%)': 40},
+    ]
+
+    # Trier les équipes en fonction du résultat
+    equipes_triees = sorted(equipes, key=lambda x: x['Résultat (%)'], reverse=True)
 
     # Affichage des équipes dans Streamlit
-    afficher_equipe(equipe_a)
-    afficher_equipe(equipe_b)
+    for equipe in equipes_triees:
+        afficher_equipe(equipe)
 
 def afficher_equipe(equipe):
     # Stylisation du texte en bleu et en gras
-    resultat_stylise = f"<span style='color: blue; font-weight: bold;'>{equipe['Résultat (%)']}%</span>"
+    couleur = 'blue' if equipe['Résultat (%)'] == 20 else 'red'
+    resultat_stylise = f"<span style='color: {couleur}; font-weight: bold;'>{equipe['Résultat (%)']}%</span>"
     st.write(f"**{equipe['Nom']}** - Résultat : {resultat_stylise}", unsafe_allow_html=True)
 
 if __name__ == "__main__":
     main()
+
 
 
 
