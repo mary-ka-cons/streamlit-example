@@ -15,12 +15,12 @@
 import streamlit as st
 
 def main():
-    # Définir le style du fond en gris
+    # Ajouter une classe CSS pour définir le fond en gris
     st.markdown(
         """
         <style>
-            body {
-                background-color: #7CD663;
+            .stApp {
+                background-color: #f2f2f2;
             }
         </style>
         """,
@@ -51,6 +51,7 @@ def afficher_equipe(equipe):
 
 if __name__ == "__main__":
     main()
+
 
 
 
