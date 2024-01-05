@@ -14,38 +14,33 @@
 # Importer les bibliothèques nécessaires
 import streamlit as st
 import pandas as pd
-from PIL import Image
 
 # Données d'exemple (remplacez-les par vos propres données)
 data = {
     'Équipe': ['Équipe A', 'Équipe B', 'Équipe C', 'Équipe D'],
     'Résultat (%)': [75, 89, 92, 68],
+    'Image': ['Images/mario.png', 'Images/mario.png', 'Images/mario.png', 'Images/mario.png'],
 }
 
 # Créer un DataFrame Pandas
 df = pd.DataFrame(data)
 
-# Charger les images
-#image_paths = ['luigi.png', 'luigi.png']
-#images = [Image.open(image_path) for image_path in image_paths]
-#images
-
-# Ajouter les images au DataFrame
-#df['Image'] = images
-#
-## Tri du DataFrame par classement
+# Tri du DataFrame par classement
 df = df.sort_values(by='Résultat (%)', ascending=False).reset_index(drop=True)
 
-## Titre de l'application
+# Titre de l'application
 st.title("Classement des équipes")
-#
-## Afficher le tableau avec les images, noms d'équipe, résultats en pourcentage et classement
-st.table(df[['Équipe', 'Résultat (%)']])
+
+# Afficher le tableau avec les images, noms d'équipe, résultats en pourcentage et classement
+for i, row in df.iterrows():
+    st.image(row['Image'], caption=row['Équipe'], use_column_width=True)
+    st.write(f"**{row['Équipe']}** - Résultat: {row['Résultat (%)']}%")
 
 # Vous pouvez également afficher le classement sous forme de texte
 st.subheader("Classement:")
 for i, row in df.iterrows():
-        st.write(f"{i + 1}. {row['Équipe']} - {row['Résultat (%)']}")
+    st.write(f"{i + 1}. {row['Équipe']} - {row['Résultat (%)']}%")
+
 
 
 # Ajouter d'autres fonctionnalités selon les besoins (graphiques, widgets, etc.)
