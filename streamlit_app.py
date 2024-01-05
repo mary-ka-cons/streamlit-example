@@ -27,7 +27,9 @@ def main():
     afficher_equipe(equipe_b)
 
 def afficher_equipe(equipe):
-    st.write(f"**{equipe['Nom']}** - Résultat : {equipe['Résultat (%)']}%")
+    # Stylisation du texte en bleu et en gras
+    resultat_stylise = f"<span style='color: blue; font-weight: bold;'>{equipe['Résultat (%)']}%</span>"
+    st.write(f"**{equipe['Nom']}** - Résultat : {resultat_stylise}", unsafe_allow_html=True)
 
 if __name__ == "__main__":
     main()
