@@ -31,6 +31,7 @@ def main():
 
     # Titre de l'application
     st.title("Comparaison des résultats des équipes")
+    
 
     # Données des équipes
     equipes = [
