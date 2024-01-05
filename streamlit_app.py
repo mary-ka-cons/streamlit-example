@@ -14,11 +14,9 @@
 
 import streamlit as st
 import pandas as pd
-
-<img src="Images/mario.png" width="100" />
-
-
-
+from IPython.core.display import HTML
+ 
+HTML('<img src="Images/mario.png" width="100" />')
 
 
 
