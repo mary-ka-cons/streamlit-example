@@ -20,7 +20,7 @@ def main():
         """
         <style>
             body {
-                background-color: #f2f2f2;
+                background-color: #7CD663;
             }
         </style>
         """,
