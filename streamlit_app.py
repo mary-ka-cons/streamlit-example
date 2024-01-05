@@ -29,8 +29,11 @@ def main():
     # Supprimer l'index
     df.index = [""] * len(df)
 
-    # Affichage des résultats dans une table
-    st.table(df)
+    # Générer une représentation HTML du DataFrame sans bordures
+    table_html = df.to_html(index=False, escape=False, classes="no-border")
+
+    # Affichage de la table HTML
+    st.write(table_html, unsafe_allow_html=True)
 
 if __name__ == "__main__":
     main()
