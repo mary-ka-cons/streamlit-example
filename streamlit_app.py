@@ -16,7 +16,7 @@ import streamlit as st
 import pandas as pd
 from IPython.core.display import HTML
  
-HTML('<img src="Images/mario.png" width="100" />')
+#HTML('<img src="Images/mario.png" width="100" />')
 
 
 
