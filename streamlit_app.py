@@ -26,11 +26,12 @@ def main():
     }
     df = pd.DataFrame(data)
 
-    # Stylisation de la table pour ne faire apparaître aucune bordure
+    # Stylisation de la table pour ne pas afficher d'index et de bordures
     st.markdown("""
         <style>
             table {
                 border-collapse: collapse;
+                width: 100%;
             }
             th, td {
                 border: none;
@@ -40,11 +41,12 @@ def main():
         </style>
     """, unsafe_allow_html=True)
 
-    # Affichage des résultats dans une table
-    st.table(df)
+    # Affichage des résultats dans une table sans index et sans bordures
+    st.table(df.style.hide_index())
 
 if __name__ == "__main__":
     main()
+
 
 
 
