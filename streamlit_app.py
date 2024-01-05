@@ -13,7 +13,6 @@
 ## Test ChatGPT
 # Importer les bibliothèques nécessaires
 import streamlit as st
-import streamlit.components.v1 as components
 import pandas as pd
 
 # Données d'exemple (remplacez-les par vos propres données)
@@ -32,23 +31,13 @@ df = df.sort_values(by='Résultat (%)', ascending=False).reset_index(drop=True)
 # Titre de l'application
 st.title("Classement des équipes")
 
-# Configuration de st_aggrid
-grid_options = {
-    'rowSelection': 'single',
-    'rowMultiSelectWithClick': True,
-    'onSelectionChanged': 'console.log("selection changed")',
-}
-
 # Afficher le tableau avec les images, noms d'équipe, résultats en pourcentage et classement
-components.html(
-    f'<div id="myGrid" style="height: 400px;">{df.to_html()}</div>',
-    height=400,
-)
-
-# Vous pouvez également afficher le classement sous forme de texte
-st.subheader("Classement:")
 for i, row in df.iterrows():
-    st.write(f"{i + 1}. {row['Équipe']} - {row['Résultat (%)']}%")
+    st.image(row['Image'], width=50, caption=row['Équipe'])
+    st.write(f"**{row['Équipe']}** - Résultat: {row['Résultat (%)']}%")
+
+
+
 
 
 
