@@ -31,9 +31,10 @@ def main():
     st.title("Comparaison des résultats des équipes")
 
     # Données des équipes
+    couleur_hex = '#33C8E9'  # Vous pouvez ajuster le code hexadécimal ici
     equipes = [
-        {'Nom': 'Équipe A', 'Résultat (%)': 20, 'Couleur': '#1DAEB8'},  
-        {'Nom': 'Équipe B', 'Résultat (%)': 10, 'Couleur': '#1DAEB8'},  
+        {'Nom': 'Équipe A', 'Résultat (%)': 20},
+        {'Nom': 'Équipe B', 'Résultat (%)': 10},
     ]
 
     # Trier les équipes en fonction du résultat
@@ -41,11 +42,11 @@ def main():
 
     # Affichage des équipes dans Streamlit
     for equipe in equipes_triees:
-        afficher_equipe(equipe)
+        afficher_equipe(equipe, couleur_hex)
 
-def afficher_equipe(equipe):
+def afficher_equipe(equipe, couleur_hex):
     # Stylisation du texte en utilisant la couleur hexadécimale
-    resultat_stylise = f"<span style='color: {equipe['Couleur']}; font-weight: bold;'>{equipe['Résultat (%)']}%</span>"
+    resultat_stylise = f"<span style='color: {couleur_hex}; font-weight: bold;'>{equipe['Résultat (%)']}%</span>"
     st.write(f"**{equipe['Nom']}** - Résultat : {resultat_stylise}", unsafe_allow_html=True)
 
 if __name__ == "__main__":
