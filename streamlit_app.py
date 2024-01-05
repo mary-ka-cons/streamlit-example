@@ -32,8 +32,8 @@ def main():
 
     # Données des équipes
     equipes = [
-        {'Nom': 'Équipe A', 'Résultat (%)': 20},
-        {'Nom': 'Équipe B', 'Résultat (%)': 10},
+        {'Nom': 'Équipe A', 'Résultat (%)': 20, 'Couleur': '#1DAEB8'},  
+        {'Nom': 'Équipe B', 'Résultat (%)': 10, 'Couleur': '#1DAEB8'},  
     ]
 
     # Trier les équipes en fonction du résultat
@@ -44,13 +44,13 @@ def main():
         afficher_equipe(equipe)
 
 def afficher_equipe(equipe):
-    # Stylisation du texte en bleu et en gras
-    couleur = 'blue' if equipe['Résultat (%)'] == 20 else 'red'
-    resultat_stylise = f"<span style='color: {couleur}; font-weight: bold;'>{equipe['Résultat (%)']}%</span>"
+    # Stylisation du texte en utilisant la couleur hexadécimale
+    resultat_stylise = f"<span style='color: {equipe['Couleur']}; font-weight: bold;'>{equipe['Résultat (%)']}%</span>"
     st.write(f"**{equipe['Nom']}** - Résultat : {resultat_stylise}", unsafe_allow_html=True)
 
 if __name__ == "__main__":
     main()
+
 
 
 
