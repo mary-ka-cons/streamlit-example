@@ -13,10 +13,24 @@
 ## Test ChatGPT
 
 import streamlit as st
-import pandas as pd
-from IPython.core.display import HTML
- 
-#HTML('<img src="Images/mario.png" width="100" />')
+
+def main():
+    # Titre de l'application
+    st.title("Comparaison des résultats des équipes")
+
+    # Données des équipes
+    equipe_a = {'Nom': 'Équipe A', 'Résultat (%)': 20}
+    equipe_b = {'Nom': 'Équipe B', 'Résultat (%)': 40}
+
+    # Affichage des équipes dans Streamlit
+    afficher_equipe(equipe_a)
+    afficher_equipe(equipe_b)
+
+def afficher_equipe(equipe):
+    st.write(f"**{equipe['Nom']}** - Résultat : {equipe['Résultat (%)']}%")
+
+if __name__ == "__main__":
+    main()
 
 
 

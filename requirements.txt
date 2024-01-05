@@ -3,4 +3,3 @@ pandas
 streamlit
 streamlit-aggrid
 numpy
-ipython
