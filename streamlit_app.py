@@ -26,7 +26,7 @@ data = {
 df = pd.DataFrame(data)
 
 # Charger les images
-image_paths = ["Images/mario.png", "Images/luigi.png"]
+image_paths = ['luigi.png', 'luigi.png']
 images = [Image.open(image_path) for image_path in image_paths]
 images
 
