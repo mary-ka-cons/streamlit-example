@@ -20,7 +20,7 @@ def main():
         """
         <style>
             .stApp {
-                background-color: #425C6C;
+                background-color: #132946;
             }
         </style>
         """,
