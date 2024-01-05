@@ -31,13 +31,14 @@ df = df.sort_values(by='Résultat (%)', ascending=False).reset_index(drop=True)
 # Titre de l'application
 st.title("Classement des équipes")
 
-# Afficher le tableau avec les images, noms d'équipe, résultats en pourcentage et classement
-for i, row in df.iterrows():
-    st.image(row['Image'], width=50, caption=row['Équipe'])
-    st.write(f"**{row['Équipe']}** - Résultat: {row['Résultat (%)']}%")
+# Créer une table avec les images, noms d'équipe et résultats en pourcentage
+table_data = {
+    'Image': [f'<img src="{row["Image"]}" width="50">' for _, row in df.iterrows()],
+    'Équipe': df['Équipe'],
+    'Résultat (%)': df['Résultat (%)'],
+}
 
-
-
+st.table(pd.DataFrame(table_data))
 
 
 
