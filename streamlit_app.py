@@ -11,43 +11,45 @@
 
 
 ## Test ChatGPT
-# Importer les bibliothèques nécessaires
+
 import streamlit as st
 import pandas as pd
 
-# Images
-img = ["Images/mario.png", "Images/luigi.png", "Images/luigi.png", "Images/luigi.png"]
+def main():
+    # Titre de l'application
+    st.title("Comparaison des résultats de deux équipes")
 
-for i in range(len(img)):
-    st.image(img[i])
+    # Collecte des données d'utilisateur
+    equipe1 = st.text_input("Nom de l'équipe 1:")
+    resultat1 = st.slider("Résultat en pourcentage pour l'équipe 1:", min_value=0, max_value=100, value=50)
 
-# Données d'exemple (remplacez-les par vos propres données)
-data = {
-    'Équipe': ['Équipe A', 'Équipe B', 'Équipe C', 'Équipe D'],
-    'Résultat (%)': [75, 89, 92, 68],
-}
+    equipe2 = st.text_input("Nom de l'équipe 2:")
+    resultat2 = st.slider("Résultat en pourcentage pour l'équipe 2:", min_value=0, max_value=100, value=50)
 
-# Créer un DataFrame Pandas
-df = pd.DataFrame(data)
+    # Création d'un DataFrame avec les données
+    data = {'Équipe': [equipe1, equipe2], 'Résultat (%)': [resultat1, resultat2]}
+    df = pd.DataFrame(data)
 
-df['Image']=[]
-for i in range(len(img)):
-    df['Image'][i] = st.image(img[i])
+    # Stylisation de la table pour ne faire apparaître aucune bordure
+    st.markdown("""
+        <style>
+            table {
+                border-collapse: collapse;
+            }
+            th, td {
+                border: none;
+                padding: 10px;
+                text-align: left;
+            }
+        </style>
+    """, unsafe_allow_html=True)
 
-# Tri du DataFrame par classement
-df = df.sort_values(by='Résultat (%)', ascending=False).reset_index(drop=True)
+    # Affichage des résultats dans une table
+    st.table(df)
 
-# Titre de l'application
-st.title("Classement des équipes")
+if __name__ == "__main__":
+    main()
 
-# Créer une table avec les images, noms d'équipe et résultats en pourcentage
-table_data = {
-    'Image': [f'<img src="{row["Image"]}" width="50">' for _, row in df.iterrows()],
-    'Équipe': df['Équipe'],
-    'Résultat (%)': df['Résultat (%)'],
-}
-
-st.table(pd.DataFrame(table_data))
 
 
 
