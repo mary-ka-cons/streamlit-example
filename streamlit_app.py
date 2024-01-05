@@ -15,28 +15,7 @@
 import streamlit as st
 import pandas as pd
 
-def main():
-    # Titre de l'application
-    st.title("Comparaison des résultats de deux équipes")
-
-    # Création d'un DataFrame avec les données
-    data = {
-        'Équipe': ['Équipe 1', 'Équipe 2'],
-        'Résultat (%)': [60, 75],
-    }
-    df = pd.DataFrame(data)
-
-    # Supprimer l'index
-    df.index = [""] * len(df)
-
-    # Générer une représentation HTML du DataFrame sans bordures
-    table_html = df.to_html(index=False, escape=False, classes="no-border")
-
-    # Affichage de la table HTML
-    st.write(table_html, unsafe_allow_html=True)
-
-if __name__ == "__main__":
-    main()
+<img src="Images/mario.png" width="100" />
 
 
 
