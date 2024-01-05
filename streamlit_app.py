@@ -26,20 +26,20 @@ data = {
 df = pd.DataFrame(data)
 
 # Charger les images
-image_paths = ['mario.png', 'luigi.png', 'luigi.png', 'luigi.png']
+image_paths = ["Images/mario.png", "Images/luigi.png"]
 images = [Image.open(image_path) for image_path in image_paths]
 
 # Ajouter les images au DataFrame
-df['Image'] = images
-
-# Tri du DataFrame par classement
-df = df.sort_values(by='Résultat (%)', ascending=False).reset_index(drop=True)
-
-# Titre de l'application
-st.title("Classement des équipes")
-
-# Afficher le tableau avec les images, noms d'équipe, résultats en pourcentage et classement
-st.table(df[['Image', 'Équipe', 'Résultat (%)']])
+#df['Image'] = images
+#
+## Tri du DataFrame par classement
+#df = df.sort_values(by='Résultat (%)', ascending=False).reset_index(drop=True)
+#
+## Titre de l'application
+#st.title("Classement des équipes")
+#
+## Afficher le tableau avec les images, noms d'équipe, résultats en pourcentage et classement
+#st.table(df[['Image', 'Équipe', 'Résultat (%)']])
 
 # Vous pouvez également afficher le classement sous forme de texte
 #st.subheader("Classement:")
