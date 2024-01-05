@@ -15,13 +15,25 @@
 import streamlit as st
 
 def main():
+    # Définir le style du fond en gris
+    st.markdown(
+        """
+        <style>
+            body {
+                background-color: #f2f2f2;
+            }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+
     # Titre de l'application
     st.title("Comparaison des résultats des équipes")
 
     # Données des équipes
     equipes = [
         {'Nom': 'Équipe A', 'Résultat (%)': 20},
-        {'Nom': 'Équipe B', 'Résultat (%)': 40},
+        {'Nom': 'Équipe B', 'Résultat (%)': 10},
     ]
 
     # Trier les équipes en fonction du résultat
@@ -33,12 +45,13 @@ def main():
 
 def afficher_equipe(equipe):
     # Stylisation du texte en bleu et en gras
-    couleur = 'blue' #if equipe['Résultat (%)'] == 20 else 'red'
+    couleur = 'blue' if equipe['Résultat (%)'] == 20 else 'red'
     resultat_stylise = f"<span style='color: {couleur}; font-weight: bold;'>{equipe['Résultat (%)']}%</span>"
     st.write(f"**{equipe['Nom']}** - Résultat : {resultat_stylise}", unsafe_allow_html=True)
 
 if __name__ == "__main__":
     main()
+
 
 
 
