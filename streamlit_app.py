@@ -1,7 +1,6 @@
 import streamlit as st
 import os
 import base64
-from streamlit_extras import let_it_rain
 
 # Définir le code secret global
 CODE_SECRET_ATTENDU = "1234"
