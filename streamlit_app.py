@@ -39,9 +39,9 @@ def validate_secret_code(code_secret):
     if code_secret == CODE_SECRET_ATTENDU:
         st.success("Code secret validé avec succès!")
         st.balloons()
-    else if code_secret == code_etape_agent_id:
+    elif code_secret == code_etape_agent_id:
         st.error("Voyons! Cela serait bien trop simple ! Il faut chercher encore")
-    else if code_secret == code_etape_cesar:
+    elif code_secret == code_etape_cesar:
         st.error("On tient quelque chose, mais il semble que ce soit crypté !")
     else:
         st.error("Tu n'y es pas du tout...")
