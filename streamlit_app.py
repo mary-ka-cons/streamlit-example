@@ -14,9 +14,9 @@ st.set_page_config(
 ########### Set the page title
 st.title("Escape Game Data 🕵️")
 
-st.header("Télécharger des Fichiers")
+st.header("Evidences to download 🕵️")
 
-
+uploaded_files = st.file_uploader("Choisissez un fichier", type=["txt", "pdf", "png", "jpg"], key="file_uploader")
 
 
 #def main():
