@@ -12,7 +12,7 @@ st.set_page_config(
 
 
 ########### Set the page title
-st.title("Escape Game Data")
+st.title("Escape Game Data 🕵️")
 
 
 
