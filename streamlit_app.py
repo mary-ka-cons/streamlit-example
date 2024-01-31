@@ -17,18 +17,19 @@ def main():
             justify-content: center;
         }
         .yellow-button {
-            background-color: #FFD700;
-            color: white;
+            background-color: transparent;
+            color: #FFD700;
+            border: 2px solid #FFD700;
             width: 200px;
             text-align: center;
             padding: 10px;
             border-radius: 5px;
             margin: 10px;
-            font="Comic Sans"
         }
         .purple-button {
-            background-color: #800080;
-            color: #FFD700;
+            background-color: transparent;
+            color: #800080;
+            border: 2px solid #800080;
             width: 200px;
             text-align: center;
             padding: 10px;
