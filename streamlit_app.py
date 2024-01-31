@@ -18,13 +18,13 @@ def main():
     st.title("Escape Game - Plateforme de Partage de Fichiers et Codes Secrets")
 
     # Bouton de téléchargement pour les utilisateurs
-    st.header("Télécharger Vos Fichiers")
+    st.markdown("<h2 style='text-align: center;'>Télécharger Vos Fichiers</h2>", unsafe_allow_html=True)
     if st.button("Télécharger Fichiers"):
         download_files()
 
 
     # Section pour proposer un code secret
-    st.header("Proposer un Code Secret")
+    st.markdown("<h2 style='text-align: center;'>Proposer un Code Secret</h2>", unsafe_allow_html=True)
 
     code_secret = st.text_input("Entrez le code secret:")
     st.warning("Assurez-vous de ne partager le code qu'avec les joueurs autorisés.")
