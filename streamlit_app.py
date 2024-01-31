@@ -1,5 +1,6 @@
 import streamlit as st
 import os
+import base64
 
 # Définir le code secret global
 CODE_SECRET_ATTENDU = "1234"
@@ -7,12 +8,31 @@ CODE_SECRET_ATTENDU = "1234"
 def main():
     st.title("Escape Game - Plateforme de Partage de Fichiers et Codes Secrets")
 
-    # Bouton "Télécharger Fichiers"
-    if st.button("Télécharger Fichiers"):
+    # Centrer les boutons et les styliser
+    st.markdown(
+        """
+        <style>
+        .stButton > button {
+            width: 100%;
+            text-align: center;
+        }
+        .yellow-button {
+            background-color: #FFD700;
+        }
+        .purple-button {
+            background-color: #800080;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+
+    # Bouton "Télécharger Fichiers" (jaune)
+    if st.button("Télécharger Fichiers", key="yellow_button", class="yellow-button"):
         download_files()
 
-    # Bouton "Tester mon code"
-    if st.button("Tester mon code"):
+    # Bouton "Tester mon code" (violet)
+    if st.button("Tester mon code", key="purple_button", class="purple-button"):
         st.markdown("<h2 style='text-align: center;'>Proposer un Code Secret</h2>", unsafe_allow_html=True)
         code_secret = st.text_input("Entrez le code secret:")
         st.warning("Assurez-vous de ne partager le code qu'avec les joueurs autorisés.")
