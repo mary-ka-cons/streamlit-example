@@ -16,42 +16,67 @@ st.title("Escape Game Data 🕵️")
 
 st.header("Evidences to download 🕵️")
 
-uploaded_files = st.file_uploader("Choisissez un fichier", type=["txt", "pdf", "png", "jpg"], key="file_uploader")
 
 
-#def main():
-#    st.title("Escape Game - Plateforme de Partage de Fichiers et Codes Secrets")
-#
-#    # Section pour télécharger des fichiers
-#    st.header("Télécharger des Fichiers")
-#    uploaded_files = st.file_uploader("Choisissez un fichier", type=["txt", "pdf", "png", "jpg"], key="file_uploader")
-#
-#    if uploaded_files is not None:
-#        for uploaded_file in uploaded_files:
-#            save_uploaded_file(uploaded_file)
-#
-#    # Section pour proposer un code secret
-#    st.header("Proposer un Code Secret")
-#
-#    code_secret = st.text_input("Entrez le code secret:")
-#    st.warning("Assurez-vous de ne partager le code qu'avec les joueurs autorisés.")
-#
-#    if st.button("Valider le Code Secret"):
-#        validate_secret_code(code_secret)
-#
-#def save_uploaded_file(uploaded_file):
-#    file_path = os.path.join("downloads", uploaded_file.name)
-#    with open(file_path, "wb") as file:
-#        file.write(uploaded_file.read())
-#    st.success(f"Fichier téléchargé avec succès: {uploaded_file.name}")
-#
-#def validate_secret_code(code_secret):
-#    # Ici, vous pouvez implémenter la logique pour valider le code secret
-#    # par exemple, le comparer à un code prédéfini ou le stocker pour une vérification ultérieure
-#    st.success("Code secret validé avec succès!")
-#
-#if __name__ == "__main__":
-#    main()
+
+def main():
+
+    # Section pour télécharger des fichiers
+    st.header("Télécharger des Fichiers")
+
+    uploaded_files = st.file_uploader("Choisissez un fichier", type=["txt", "pdf", "png", "jpg"], key="file_uploader")
+
+    if uploaded_files is not None:
+        for uploaded_file in uploaded_files:
+            save_uploaded_file(uploaded_file)
+
+    # Section pour proposer un code secret
+    st.header("Proposer un Code Secret")
+
+    code_secret = st.text_input("Entrez le code secret:")
+    st.warning("Assurez-vous de ne partager le code qu'avec les joueurs autorisés.")
+
+    if st.button("Valider le Code Secret"):
+        validate_secret_code(code_secret)
+
+    # Bouton de téléchargement pour les utilisateurs
+    st.header("Télécharger Vos Fichiers")
+    if st.button("Télécharger Fichiers"):
+        download_files()
+
+def save_uploaded_file(uploaded_file):
+    file_path = os.path.join("downloads", uploaded_file.name)
+    with open(file_path, "wb") as file:
+        file.write(uploaded_file.read())
+    st.success(f"Fichier téléchargé avec succès: {uploaded_file.name}")
+
+def validate_secret_code(code_secret):
+    # Ici, vous pouvez implémenter la logique pour valider le code secret
+    # par exemple, le comparer à un code prédéfini ou le stocker pour une vérification ultérieure
+    st.success("Code secret validé avec succès!")
+
+def download_files():
+    files = os.listdir("downloads")
+    if not files:
+        st.warning("Aucun fichier disponible pour le téléchargement.")
+        return
+
+    st.info("Cliquez sur le lien ci-dessous pour télécharger vos fichiers :")
+    with st.spinner("Téléchargement en cours..."):
+        for file_name in files:
+            file_path = os.path.join("downloads", file_name)
+            st.download_button(label=file_name, key=file_name, on_click=open_file, args=(file_path,))
+
+def open_file(file_path):
+    with open(file_path, "rb") as file:
+        file_contents = file.read()
+    st.download_button(label="Télécharger", key=file_path, on_click=download_file, args=(file_contents, file_path))
+
+def download_file(file_contents, file_name):
+    st.success("Téléchargement réussi !")
+
+if __name__ == "__main__":
+    main()
 
 
 
