@@ -36,6 +36,7 @@ def validate_secret_code(code_secret):
     # Valider le code secret avec le code secret attendu
     if code_secret == CODE_SECRET_ATTENDU:
         st.success("Code secret validé avec succès!")
+        st.balloons()
     else:
         st.error("Error !!!")
 
