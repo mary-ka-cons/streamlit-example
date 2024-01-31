@@ -18,18 +18,17 @@ def main():
         }
         .yellow-button {
             background-color: #FFD700;
-            color: black;
+            color: white;
             width: 200px;
             text-align: center;
             padding: 10px;
             border-radius: 5px;
             margin: 10px;
-            textColor="#FAFAFA";
-            font="sans serif"
+            font="Comic Sans"
         }
         .purple-button {
             background-color: #800080;
-            color: white;
+            color: #FFD700;
             width: 200px;
             text-align: center;
             padding: 10px;
