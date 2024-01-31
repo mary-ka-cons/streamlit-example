@@ -12,6 +12,10 @@ def main():
     st.markdown(
         """
         <style>
+        .centered {
+            display: flex;
+            justify-content: center;
+        }
         .yellow-button {
             background-color: #FFD700;
             color: black;
@@ -19,8 +23,7 @@ def main():
             text-align: center;
             padding: 10px;
             border-radius: 5px;
-            display: block;
-            margin: 0 auto;
+            margin: 10px;
         }
         .purple-button {
             background-color: #800080;
@@ -29,8 +32,7 @@ def main():
             text-align: center;
             padding: 10px;
             border-radius: 5px;
-            display: block;
-            margin: 0 auto;
+            margin: 10px;
         }
         </style>
         """,
@@ -38,17 +40,26 @@ def main():
     )
 
     # Bouton "Télécharger Fichiers" (jaune)
-    if st.button("Télécharger Fichiers", key="yellow_button", style="height: 50px;", help="yellow-button"):
-        download_files()
+    st.markdown("<div class='centered'><button class='yellow-button' onclick='downloadFiles()'>Télécharger Fichiers</button></div>", unsafe_allow_html=True)
 
     # Bouton "Tester mon code" (violet)
-    if st.button("Tester mon code", key="purple_button", style="height: 50px;", help="purple-button"):
-        st.markdown("<h2 style='text-align: center;'>Proposer un Code Secret</h2>", unsafe_allow_html=True)
-        code_secret = st.text_input("Entrez le code secret:")
-        st.warning("Assurez-vous de ne partager le code qu'avec les joueurs autorisés.")
+    st.markdown("<div class='centered'><button class='purple-button' onclick='testCode()'>Tester mon code</button></div>", unsafe_allow_html=True)
+    
+    # Script JavaScript pour les boutons
+    st.markdown(
+        """
+        <script>
+        function downloadFiles() {
+            // Mettez ici le code pour le bouton "Télécharger Fichiers"
+        }
 
-        if st.button("Valider"):
-            validate_secret_code(code_secret)
+        function testCode() {
+            // Mettez ici le code pour le bouton "Tester mon code"
+        }
+        </script>
+        """,
+        unsafe_allow_html=True
+    )
 
 def download_files():
     files = os.listdir("downloads")
