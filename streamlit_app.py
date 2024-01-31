@@ -1,5 +1,6 @@
 import streamlit as st
 import os
+import base64
 
 # Définir le code secret global
 CODE_SECRET_ATTENDU = "1234"
@@ -7,18 +8,41 @@ CODE_SECRET_ATTENDU = "1234"
 def main():
     st.title("Escape Game - Plateforme de Partage de Fichiers et Codes Secrets")
 
-    # Bouton "Télécharger Fichiers"
+    # Section pour télécharger des fichiers
+    st.markdown("<h2 style='text-align: center;'>Télécharger des Fichiers</h2>", unsafe_allow_html=True)
+
+    uploaded_files = st.file_uploader("Choisissez un fichier", type=["txt", "pdf", "png", "jpg"], key="file_uploader")
+
+    if uploaded_files is not None:
+        for uploaded_file in uploaded_files:
+            save_uploaded_file(uploaded_file)
+
+    # Section pour proposer un code secret
+    st.markdown("<h2 style='text-align: center;'>Proposer un Code Secret</h2>", unsafe_allow_html=True)
+
+    code_secret = st.text_input("Entrez le code secret:")
+    st.warning("Assurez-vous de ne partager le code qu'avec les joueurs autorisés.")
+
+    if st.button("Valider le Code Secret"):
+        validate_secret_code(code_secret)
+
+    # Bouton de téléchargement pour les utilisateurs
+    st.markdown("<h2 style='text-align: center;'>Télécharger Vos Fichiers</h2>", unsafe_allow_html=True)
     if st.button("Télécharger Fichiers"):
         download_files()
 
-    # Bouton "Tester mon code"
-    if st.button("Tester mon code"):
-        st.markdown("<h2 style='text-align: center;'>Proposer un Code Secret</h2>", unsafe_allow_html=True)
-        code_secret = st.text_input("Entrez le code secret:")
-        st.warning("Assurez-vous de ne partager le code qu'avec les joueurs autorisés.")
+def save_uploaded_file(uploaded_file):
+    file_path = os.path.join("downloads", uploaded_file.name)
+    with open(file_path, "wb") as file:
+        file.write(uploaded_file.read())
+    st.success(f"Fichier téléchargé avec succès: {uploaded_file.name}")
 
-        if st.button("Valider"):
-            validate_secret_code(code_secret)
+def validate_secret_code(code_secret):
+    # Valider le code secret avec le code secret attendu
+    if code_secret == CODE_SECRET_ATTENDU:
+        st.success("Code secret validé avec succès!")
+    else:
+        st.error("Code secret incorrect. Veuillez réessayer.")
 
 def download_files():
     files = os.listdir("downloads")
@@ -32,13 +56,6 @@ def download_files():
             file_path = os.path.join("downloads", file_name)
             st.markdown(get_binary_file_downloader_html(file_name, file_path), unsafe_allow_html=True)
 
-def validate_secret_code(code_secret):
-    # Valider le code secret avec le code secret attendu
-    if code_secret == CODE_SECRET_ATTENDU:
-        st.success("Bravo ! Code secret validé avec succès.")
-    else:
-        st.error("Erreur. Le code secret est incorrect. Veuillez réessayer.")
-
 def get_binary_file_downloader_html(label, file_path):
     with open(file_path, 'rb') as file:
         data = file.read()
@@ -48,8 +65,6 @@ def get_binary_file_downloader_html(label, file_path):
 
 if __name__ == "__main__":
     main()
-
-
 
 
 
