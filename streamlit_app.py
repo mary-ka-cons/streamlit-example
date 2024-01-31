@@ -17,7 +17,7 @@ def main():
     # Bouton de téléchargement pour les utilisateurs
     #st.markdown("<h2 style='color:#A69937; font-size:200%; text-align:left ''>Download Files</h2>", unsafe_allow_html=True)
     #if st.button("Download Files"):
-        download_files()
+    download_files()
 
     # Section pour proposer un code secret
     st.markdown("<h2 style='text-align: center;'>Proposer un Code Secret</h2>", unsafe_allow_html=True)
