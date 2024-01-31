@@ -24,6 +24,8 @@ def main():
             padding: 10px;
             border-radius: 5px;
             margin: 10px;
+            textColor="#FAFAFA";
+            font="sans serif"
         }
         .purple-button {
             background-color: #800080;
