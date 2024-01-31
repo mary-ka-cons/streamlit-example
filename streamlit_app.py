@@ -18,7 +18,7 @@ def main():
 
     # Section pour proposer un code secret
 
-    st.markdown("<h2 style='color:#A69937; font-size:250%; text-align:center '><br><br><br>👁️ Test your Code 👁️</h2>", unsafe_allow_html=True)
+    st.markdown("<h2 style='color:#A69937; font-size:250%; text-align:center '><br><br>👁️ Test your Code 👁️</h2>", unsafe_allow_html=True)
     st.markdown("<p style='color:#A69937; font-size:100%; text-align:center '>Vous aurez besoin de cliquer sur le bouton 'Valider' pour tester votre code.</h2>", unsafe_allow_html=True)
 
     code_secret = st.text_input("Entrez le code secret:")
