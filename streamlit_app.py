@@ -14,21 +14,18 @@ st.set_page_config(
 ########### Set the page title
 st.title("Escape Game Data 🕵️")
 
-st.header("Evidences to download 🕵️")
-
-
 
 
 def main():
 
     # Section pour télécharger des fichiers
-    st.header("Télécharger des Fichiers")
-
-    uploaded_files = st.file_uploader("Choisissez un fichier", type=["txt", "pdf", "png", "jpg"], key="file_uploader")
-
-    if uploaded_files is not None:
-        for uploaded_file in uploaded_files:
-            save_uploaded_file(uploaded_file)
+    #st.header("Télécharger des Fichiers")
+#
+    #uploaded_files = st.file_uploader("Choisissez un fichier", type=["txt", "pdf", "png", "jpg"], key="file_uploader")
+#
+    #if uploaded_files is not None:
+    #    for uploaded_file in uploaded_files:
+    #        save_uploaded_file(uploaded_file)
 
     # Section pour proposer un code secret
     st.header("Proposer un Code Secret")
