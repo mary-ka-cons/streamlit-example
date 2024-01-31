@@ -16,8 +16,8 @@ def main():
     if st.button("Tester mon code"):
         code_secret = st.text_input("Entrez le code secret :")
         if st.button("Valider"):
-            result_area = st.empty()
-            validate_secret_code(code_secret, result_area)
+            result = validate_secret_code(code_secret)
+            st.markdown(result, unsafe_allow_html=True)
 
 def download_files():
     files = os.listdir("downloads")
@@ -31,13 +31,12 @@ def download_files():
             file_path = os.path.join("downloads", file_name)
             st.markdown(get_binary_file_downloader_html(file_name, file_path), unsafe_allow_html=True)
 
-def validate_secret_code(code_secret, result_area):
+def validate_secret_code(code_secret):
     # Valider le code secret avec le code secret attendu
     if code_secret == CODE_SECRET_ATTENDU:
-        result_area.success("Bravo ! Vous avez réussi ! 🎉👏")
-        st.balloons()
+        return "<div style='color: green; text-align: center;'>Bravo ! Vous avez réussi ! 🎉👏</div>"
     else:
-        result_area.error("Erreur. Le code secret est incorrect. Veuillez réessayer.")
+        return "<div style='color: red; text-align: center;'>Erreur. Le code secret est incorrect. Veuillez réessayer.</div>"
 
 def get_binary_file_downloader_html(label, file_path):
     with open(file_path, 'rb') as file:
@@ -48,6 +47,7 @@ def get_binary_file_downloader_html(label, file_path):
 
 if __name__ == "__main__":
     main()
+
 
 
 
