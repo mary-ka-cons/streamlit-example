@@ -8,6 +8,8 @@ CODE_SECRET_ATTENDU = "1234"
 def main():
     st.markdown("<h1 style='text-align: center;'>Welcome</h1>", unsafe_allow_html=True)
 
+    st.markdown("<p style='text-align: center;'>Bonjour bla bla bla </p>", unsafe_allow_html=True)
+
     # Bouton de téléchargement pour les utilisateurs
     st.markdown("<h2 style='text-align: center;'>Télécharger Vos Fichiers</h2>", unsafe_allow_html=True)
     if st.button("Télécharger Fichiers"):
