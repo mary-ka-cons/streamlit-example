@@ -29,7 +29,7 @@ def main():
         validate_secret_code(code_secret)   
 
 def save_uploaded_file(uploaded_file):
-    file_path = os.path.join("downloads__escape_game_files", uploaded_file.name)
+    file_path = os.path.join("downloads", uploaded_file.name)
     with open(file_path, "wb") as file:
         file.write(uploaded_file.read())
     st.success(f"Fichier téléchargé avec succès: {uploaded_file.name}")
@@ -47,7 +47,7 @@ def validate_secret_code(code_secret):
         st.error("Tu n'y es pas du tout...")
 
 def download_files():
-    files = os.listdir("downloads__escape_game_files")
+    files = os.listdir("downloads")
     if not files:
         st.warning("Aucun fichier disponible pour le téléchargement.")
         return
@@ -55,7 +55,7 @@ def download_files():
     st.info("Cliquez sur les liens ci-dessous pour télécharger vos fichiers", icon="👇")
     with st.spinner("Téléchargement en cours..."):
         for file_name in files:
-            file_path = os.path.join("downloads__escape_game_files", file_name)
+            file_path = os.path.join("downloads", file_name)
             st.markdown(get_binary_file_downloader_html(file_name, file_path), unsafe_allow_html=True)
 
 def get_binary_file_downloader_html(label, file_path):
