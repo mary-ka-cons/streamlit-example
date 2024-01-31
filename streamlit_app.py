@@ -5,14 +5,14 @@ import os
 ## Set-Up Streamlit
 ########## Set the tab name
 st.set_page_config(
-    page_title="Contest",
-    page_icon="🧿",
+    page_title="Escape Game Data",
+    page_icon="🕵️",
 
 )
 
 
 ########### Set the page title
-st.title("Live Results")
+st.title("Escape Game Data")
 
 
 
