@@ -17,14 +17,11 @@ CODE_SECRET_ATTENDU = "1234"
 def main():
     st.title("Escape Game - Plateforme de Partage de Fichiers et Codes Secrets")
 
-    # Section pour télécharger des fichiers
-    st.header("Télécharger des Fichiers")
+    # Bouton de téléchargement pour les utilisateurs
+    st.header("Télécharger Vos Fichiers")
+    if st.button("Télécharger Fichiers"):
+        download_files()
 
-    uploaded_files = st.file_uploader("Choisissez un fichier", type=["txt", "pdf", "png", "jpg"], key="file_uploader")
-
-    if uploaded_files is not None:
-        for uploaded_file in uploaded_files:
-            save_uploaded_file(uploaded_file)
 
     # Section pour proposer un code secret
     st.header("Proposer un Code Secret")
@@ -35,10 +32,7 @@ def main():
     if st.button("Valider le Code Secret"):
         validate_secret_code(code_secret)
 
-    # Bouton de téléchargement pour les utilisateurs
-    st.header("Télécharger Vos Fichiers")
-    if st.button("Télécharger Fichiers"):
-        download_files()
+
 
 def save_uploaded_file(uploaded_file):
     file_path = os.path.join("downloads", uploaded_file.name)
