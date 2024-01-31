@@ -6,7 +6,7 @@ import base64
 CODE_SECRET_ATTENDU = "1234"
 
 def main():
-    st.markdown("<h1 style='text-align: center; color=yellow; '>Are you ready ?</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='color:#3773A6; font-size:200%; text-align:center ';>Are you ready ?</h1>", unsafe_allow_html=True)
 
     st.markdown("<p style='text-align: center;'>Bonjour bla bla bla </p>", unsafe_allow_html=True)
 
