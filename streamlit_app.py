@@ -36,6 +36,20 @@ def main():
             border-radius: 5px;
             margin: 10px;
         }
+        .error-textbox {
+            color: white;
+            background-color: #FF6347;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .success-textbox {
+            color: white;
+            background-color: #32CD32;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
         </style>
         """,
         unsafe_allow_html=True
@@ -46,51 +60,38 @@ def main():
 
     # Bouton "Tester mon code" (violet)
     st.markdown("<div class='centered'><button class='purple-button' onclick='testCode()'>Tester mon code</button></div>", unsafe_allow_html=True)
-    
+
+    # Zone pour le résultat du test de code
+    result_area = st.empty()
+
     # Script JavaScript pour les boutons
     st.markdown(
         """
         <script>
         function downloadFiles() {
             // Mettez ici le code pour le bouton "Télécharger Fichiers"
+            alert("Fonctionnalité de téléchargement à implémenter !");
         }
 
         function testCode() {
             // Mettez ici le code pour le bouton "Tester mon code"
+            const code = prompt("Entrez le code secret :");
+            if (code === '1234') {
+                // Afficher le message de réussite
+                document.getElementById('result_area').innerHTML = "<div class='success-textbox'>Vous avez réussi ! 🎉👏</div>";
+            } else {
+                // Afficher le message d'erreur
+                document.getElementById('result_area').innerHTML = "<div class='error-textbox'>Code incorrect. Veuillez réessayer.</div>";
+            }
         }
         </script>
         """,
         unsafe_allow_html=True
     )
 
-def download_files():
-    files = os.listdir("downloads")
-    if not files:
-        st.warning("Aucun fichier disponible pour le téléchargement.")
-        return
-
-    st.info("Cliquez sur le lien ci-dessous pour télécharger vos fichiers :")
-    with st.spinner("Téléchargement en cours..."):
-        for file_name in files:
-            file_path = os.path.join("downloads", file_name)
-            st.markdown(get_binary_file_downloader_html(file_name, file_path), unsafe_allow_html=True)
-
-def validate_secret_code(code_secret):
-    # Valider le code secret avec le code secret attendu
-    if code_secret == CODE_SECRET_ATTENDU:
-        st.success("Bravo ! Code secret validé avec succès.")
-    else:
-        st.error("Erreur. Le code secret est incorrect. Veuillez réessayer.")
-
-def get_binary_file_downloader_html(label, file_path):
-    with open(file_path, 'rb') as file:
-        data = file.read()
-    b64 = base64.b64encode(data).decode()
-    custom_html = f'<a href="data:file/txt;base64,{b64}" download="{label}">Télécharger {label}</a>'
-    return custom_html
-
 if __name__ == "__main__":
     main()
+
 
 
 
