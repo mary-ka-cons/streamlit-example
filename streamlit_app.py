@@ -8,28 +8,18 @@ CODE_SECRET_ATTENDU = "1234"
 def main():
     st.title("Escape Game - Plateforme de Partage de Fichiers et Codes Secrets")
 
-    # Section pour télécharger des fichiers
-    st.markdown("<h2 style='text-align: center;'>Télécharger des Fichiers</h2>", unsafe_allow_html=True)
-
-    uploaded_files = st.file_uploader("Choisissez un fichier", type=["txt", "pdf", "png", "jpg"], key="file_uploader")
-
-    if uploaded_files is not None:
-        for uploaded_file in uploaded_files:
-            save_uploaded_file(uploaded_file)
+    # Bouton de téléchargement pour les utilisateurs
+    st.markdown("<h2 style='text-align: center;'>Télécharger Vos Fichiers</h2>", unsafe_allow_html=True)
+    if st.button("Télécharger Fichiers"):
+        download_files()
 
     # Section pour proposer un code secret
     st.markdown("<h2 style='text-align: center;'>Proposer un Code Secret</h2>", unsafe_allow_html=True)
 
     code_secret = st.text_input("Entrez le code secret:")
-    st.warning("Assurez-vous de ne partager le code qu'avec les joueurs autorisés.")
 
     if st.button("Valider le Code Secret"):
-        validate_secret_code(code_secret)
-
-    # Bouton de téléchargement pour les utilisateurs
-    st.markdown("<h2 style='text-align: center;'>Télécharger Vos Fichiers</h2>", unsafe_allow_html=True)
-    if st.button("Télécharger Fichiers"):
-        download_files()
+        validate_secret_code(code_secret)   
 
 def save_uploaded_file(uploaded_file):
     file_path = os.path.join("downloads", uploaded_file.name)
@@ -50,7 +40,7 @@ def download_files():
         st.warning("Aucun fichier disponible pour le téléchargement.")
         return
 
-    st.info("Cliquez sur le lien ci-dessous pour télécharger vos fichiers :")
+    st.info("Cliquez sur les liens ci-dessous pour télécharger vos fichiers :")
     with st.spinner("Téléchargement en cours..."):
         for file_name in files:
             file_path = os.path.join("downloads", file_name)
