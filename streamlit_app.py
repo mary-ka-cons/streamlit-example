@@ -28,14 +28,15 @@ def main():
     )
 
     # Bouton "Télécharger Fichiers" (jaune)
-    if st.button("Télécharger Fichiers", key="yellow_button", class="yellow-button"):
+    if st.button("Télécharger Fichiers", key="yellow_button", help="yellow-button"):
         download_files()
 
     # Bouton "Tester mon code" (violet)
-    if st.button("Tester mon code", key="purple_button", class="purple-button"):
+    if st.button("Tester mon code", key="purple_button", help="purple-button"):
         st.markdown("<h2 style='text-align: center;'>Proposer un Code Secret</h2>", unsafe_allow_html=True)
         code_secret = st.text_input("Entrez le code secret:")
         st.warning("Assurez-vous de ne partager le code qu'avec les joueurs autorisés.")
+
 
         if st.button("Valider"):
             validate_secret_code(code_secret)
