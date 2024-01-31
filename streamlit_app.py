@@ -12,15 +12,25 @@ def main():
     st.markdown(
         """
         <style>
-        .stButton > button {
-            width: 100%;
-            text-align: center;
-        }
         .yellow-button {
             background-color: #FFD700;
+            color: black;
+            width: 200px;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+            display: block;
+            margin: 0 auto;
         }
         .purple-button {
             background-color: #800080;
+            color: white;
+            width: 200px;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+            display: block;
+            margin: 0 auto;
         }
         </style>
         """,
@@ -28,15 +38,14 @@ def main():
     )
 
     # Bouton "Télécharger Fichiers" (jaune)
-    if st.button("Télécharger Fichiers", key="yellow_button", help="yellow-button"):
+    if st.button("Télécharger Fichiers", key="yellow_button", style="height: 50px;", help="yellow-button"):
         download_files()
 
     # Bouton "Tester mon code" (violet)
-    if st.button("Tester mon code", key="purple_button", help="purple-button"):
+    if st.button("Tester mon code", key="purple_button", style="height: 50px;", help="purple-button"):
         st.markdown("<h2 style='text-align: center;'>Proposer un Code Secret</h2>", unsafe_allow_html=True)
         code_secret = st.text_input("Entrez le code secret:")
         st.warning("Assurez-vous de ne partager le code qu'avec les joueurs autorisés.")
-
 
         if st.button("Valider"):
             validate_secret_code(code_secret)
@@ -69,6 +78,7 @@ def get_binary_file_downloader_html(label, file_path):
 
 if __name__ == "__main__":
     main()
+
 
 
 
