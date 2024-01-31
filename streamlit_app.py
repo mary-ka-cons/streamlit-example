@@ -1,6 +1,5 @@
 import streamlit as st
 import os
-import base64
 
 # Définir le code secret global
 CODE_SECRET_ATTENDU = "1234"
@@ -8,16 +7,18 @@ CODE_SECRET_ATTENDU = "1234"
 def main():
     st.title("Escape Game - Plateforme de Partage de Fichiers et Codes Secrets")
 
-    # Bouton "Télécharger Fichiers" (jaune)
+    # Bouton "Télécharger Fichiers"
     if st.button("Télécharger Fichiers"):
         download_files()
 
-    # Bouton "Tester mon code" (violet)
+    # Bouton "Tester mon code"
     if st.button("Tester mon code"):
-        code_secret = st.text_input("Entrez le code secret :")
+        st.markdown("<h2 style='text-align: center;'>Proposer un Code Secret</h2>", unsafe_allow_html=True)
+        code_secret = st.text_input("Entrez le code secret:")
+        st.warning("Assurez-vous de ne partager le code qu'avec les joueurs autorisés.")
+
         if st.button("Valider"):
-            result_area = st.empty()
-            validate_secret_code(code_secret, result_area)
+            validate_secret_code(code_secret)
 
 def download_files():
     files = os.listdir("downloads")
@@ -31,23 +32,23 @@ def download_files():
             file_path = os.path.join("downloads", file_name)
             st.markdown(get_binary_file_downloader_html(file_name, file_path), unsafe_allow_html=True)
 
-def validate_secret_code(code_secret, result_area):
+def validate_secret_code(code_secret):
     # Valider le code secret avec le code secret attendu
     if code_secret == CODE_SECRET_ATTENDU:
-        result_area.success("Bravo ! Vous avez réussi ! 🎉👏")
-        st.balloons()
+        st.success("Bravo ! Code secret validé avec succès.")
     else:
-        result_area.error("Erreur. Le code secret est incorrect. Veuillez réessayer.")
+        st.error("Erreur. Le code secret est incorrect. Veuillez réessayer.")
 
 def get_binary_file_downloader_html(label, file_path):
     with open(file_path, 'rb') as file:
         data = file.read()
     b64 = base64.b64encode(data).decode()
-    custom_html = f'<a href="data:application/octet-stream;base64,{b64}" download="{label}">Télécharger {label}</a>'
+    custom_html = f'<a href="data:file/txt;base64,{b64}" download="{label}">Télécharger {label}</a>'
     return custom_html
 
 if __name__ == "__main__":
     main()
+
 
 
 
