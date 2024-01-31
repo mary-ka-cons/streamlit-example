@@ -14,18 +14,18 @@ st.set_page_config(
 ########### Set the page title
 st.title("Escape Game Data 🕵️")
 
+st.header("Télécharger des Fichiers")
 
 
 
 
-
-def main():
-    st.title("Escape Game - Plateforme de Partage de Fichiers et Codes Secrets")
-
-    # Section pour télécharger des fichiers
-    st.header("Télécharger des Fichiers")
-    uploaded_files = st.file_uploader("Choisissez un fichier", type=["txt", "pdf", "png", "jpg"], key="file_uploader")
-
+#def main():
+#    st.title("Escape Game - Plateforme de Partage de Fichiers et Codes Secrets")
+#
+#    # Section pour télécharger des fichiers
+#    st.header("Télécharger des Fichiers")
+#    uploaded_files = st.file_uploader("Choisissez un fichier", type=["txt", "pdf", "png", "jpg"], key="file_uploader")
+#
 #    if uploaded_files is not None:
 #        for uploaded_file in uploaded_files:
 #            save_uploaded_file(uploaded_file)
