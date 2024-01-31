@@ -14,32 +14,25 @@ st.set_page_config(
 ########### Set the page title
 st.title("Escape Game Data 🕵️")
 
-
+# Définir le code secret global
+CODE_SECRET_ATTENDU = "1234"
 
 def main():
 
-    # Section pour télécharger des fichiers
-    #st.header("Télécharger des Fichiers")
-#
-    #uploaded_files = st.file_uploader("Choisissez un fichier", type=["txt", "pdf", "png", "jpg"], key="file_uploader")
-#
-    #if uploaded_files is not None:
-    #    for uploaded_file in uploaded_files:
-    #        save_uploaded_file(uploaded_file)
+    # Bouton de téléchargement pour les utilisateurs
+    st.header("Introduction")
+    if st.button("Download Evidences"):
+        download_files()
 
     # Section pour proposer un code secret
-    st.header("Proposer un Code Secret")
+    st.header("Test your end code")
 
-    code_secret = st.text_input("Entrez le code secret:")
-    st.warning("Assurez-vous de ne partager le code qu'avec les joueurs autorisés.")
+    code_secret = st.text_input("Write the code:")
 
-    if st.button("Valider le Code Secret"):
+    if st.button("Test it...!"):
         validate_secret_code(code_secret)
 
-    # Bouton de téléchargement pour les utilisateurs
-    st.header("Télécharger Vos Fichiers")
-    if st.button("Télécharger Fichiers"):
-        download_files()
+    
 
 def save_uploaded_file(uploaded_file):
     file_path = os.path.join("downloads", uploaded_file.name)
@@ -48,9 +41,11 @@ def save_uploaded_file(uploaded_file):
     st.success(f"Fichier téléchargé avec succès: {uploaded_file.name}")
 
 def validate_secret_code(code_secret):
-    # Ici, vous pouvez implémenter la logique pour valider le code secret
-    # par exemple, le comparer à un code prédéfini ou le stocker pour une vérification ultérieure
-    st.success("Code secret validé avec succès!")
+    # Valider le code secret avec le code secret attendu
+    if code_secret == CODE_SECRET_ATTENDU:
+        st.success("Code secret validé avec succès!")
+    else:
+        st.error("Code secret incorrect. Veuillez réessayer.")
 
 def download_files():
     files = os.listdir("downloads")
