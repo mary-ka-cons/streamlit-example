@@ -3,15 +3,6 @@ import os
 import base64
 
 
-# Add custom CSS to hide the GitHub icon
-hide_github_icon = """
-#GithubIcon {
-  visibility: hidden;
-}
-"""
-st.markdown(hide_github_icon, unsafe_allow_html=True)
-
-
 # Définir le code secret global
 CODE_SECRET_ATTENDU = "CLAIM"
 code_etape_agent_id = "683481"
