@@ -1,3 +1,6 @@
+import streamlit as st
+import os
+
 
 ## Set-Up Streamlit
 ########## Set the tab name
@@ -14,8 +17,7 @@ st.title("Live Results")
 
 
 
-import streamlit as st
-import os
+
 
 def main():
     st.title("Escape Game - Plateforme de Partage de Fichiers et Codes Secrets")
