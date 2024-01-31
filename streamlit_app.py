@@ -46,7 +46,7 @@ def download_files():
         st.warning("Aucun fichier disponible pour le téléchargement.")
         return
 
-    st.info("    Cliquez sur les liens ci-dessous pour télécharger vos fichiers :", icon="👇")
+    st.info("    Cliquez sur les liens ci-dessous pour télécharger vos fichiers 👇", icon="👇")
     with st.spinner("Téléchargement en cours..."):
         for file_name in files:
             file_path = os.path.join("downloads", file_name)
