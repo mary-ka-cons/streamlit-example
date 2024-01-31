@@ -1,6 +1,7 @@
 import streamlit as st
 import os
 import base64
+from streamlit_extras import let_it_rain
 
 # Définir le code secret global
 CODE_SECRET_ATTENDU = "1234"
@@ -36,7 +37,8 @@ def validate_secret_code(code_secret):
     # Valider le code secret avec le code secret attendu
     if code_secret == CODE_SECRET_ATTENDU:
         st.success("Code secret validé avec succès!")
-        st.balloons()
+        #st.balloons()
+        rain(emoji="👁️")
     else:
         st.error("Error !!!")
 

@@ -2,5 +2,6 @@ altair
 pandas
 streamlit
 streamlit-aggrid
+streamlit-extras
 numpy
 matplotlib==3.4.3
