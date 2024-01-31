@@ -1,4 +1,5 @@
 import streamlit as st
+import os
 import base64
 
 # Définir le code secret global
@@ -18,8 +19,16 @@ def main():
             validate_secret_code(code_secret)
 
 def download_files():
-    # Mettez ici le code pour le bouton "Télécharger Fichiers"
-    st.warning("Fonctionnalité de téléchargement à implémenter !")
+    files = os.listdir("downloads")
+    if not files:
+        st.warning("Aucun fichier disponible pour le téléchargement.")
+        return
+
+    st.info("Cliquez sur le lien ci-dessous pour télécharger vos fichiers :")
+    with st.spinner("Téléchargement en cours..."):
+        for file_name in files:
+            file_path = os.path.join("downloads", file_name)
+            st.markdown(get_binary_file_downloader_html(file_name, file_path), unsafe_allow_html=True)
 
 def validate_secret_code(code_secret):
     # Valider le code secret avec le code secret attendu
@@ -28,6 +37,13 @@ def validate_secret_code(code_secret):
         st.balloons()
     else:
         st.error("Erreur. Le code secret est incorrect. Veuillez réessayer.")
+
+def get_binary_file_downloader_html(label, file_path):
+    with open(file_path, 'rb') as file:
+        data = file.read()
+    b64 = base64.b64encode(data).decode()
+    custom_html = f'<a href="data:application/octet-stream;base64,{b64}" download="{label}">Télécharger {label}</a>'
+    return custom_html
 
 if __name__ == "__main__":
     main()
