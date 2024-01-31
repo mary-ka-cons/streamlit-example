@@ -1,6 +1,6 @@
 import streamlit as st
 import os
-
+import base64
 
 ## Set-Up Streamlit
 ########## Set the tab name
@@ -11,28 +11,34 @@ st.set_page_config(
 )
 
 
-########### Set the page title
-st.title("Escape Game Data 🕵️")
-
 # Définir le code secret global
 CODE_SECRET_ATTENDU = "1234"
 
 def main():
+    st.title("Escape Game - Plateforme de Partage de Fichiers et Codes Secrets")
 
-    # Bouton de téléchargement pour les utilisateurs
-    st.header("Introduction")
-    if st.button("Download Evidences"):
-        download_files()
+    # Section pour télécharger des fichiers
+    st.header("Télécharger des Fichiers")
+
+    uploaded_files = st.file_uploader("Choisissez un fichier", type=["txt", "pdf", "png", "jpg"], key="file_uploader")
+
+    if uploaded_files is not None:
+        for uploaded_file in uploaded_files:
+            save_uploaded_file(uploaded_file)
 
     # Section pour proposer un code secret
-    st.header("Test your end code")
+    st.header("Proposer un Code Secret")
 
-    code_secret = st.text_input("Write the code:")
+    code_secret = st.text_input("Entrez le code secret:")
+    st.warning("Assurez-vous de ne partager le code qu'avec les joueurs autorisés.")
 
-    if st.button("Test it...!"):
+    if st.button("Valider le Code Secret"):
         validate_secret_code(code_secret)
 
-    
+    # Bouton de téléchargement pour les utilisateurs
+    st.header("Télécharger Vos Fichiers")
+    if st.button("Télécharger Fichiers"):
+        download_files()
 
 def save_uploaded_file(uploaded_file):
     file_path = os.path.join("downloads", uploaded_file.name)
@@ -57,18 +63,18 @@ def download_files():
     with st.spinner("Téléchargement en cours..."):
         for file_name in files:
             file_path = os.path.join("downloads", file_name)
-            st.download_button(label=file_name, key=file_name, on_click=open_file, args=(file_path,))
+            st.markdown(get_binary_file_downloader_html(file_name, file_path), unsafe_allow_html=True)
 
-def open_file(file_path):
-    with open(file_path, "rb") as file:
-        file_contents = file.read()
-    st.download_button(label="Télécharger", key=file_path, on_click=download_file, args=(file_contents, file_path))
-
-def download_file(file_contents, file_name):
-    st.success("Téléchargement réussi !")
+def get_binary_file_downloader_html(label, file_path):
+    with open(file_path, 'rb') as file:
+        data = file.read()
+    b64 = base64.b64encode(data).decode()
+    custom_html = f'<a href="data:file/txt;base64,{b64}" download="{label}">Télécharger {label}</a>'
+    return custom_html
 
 if __name__ == "__main__":
     main()
+
 
 
 
