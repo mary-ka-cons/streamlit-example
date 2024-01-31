@@ -10,32 +10,32 @@ def main():
     st.header("Télécharger des Fichiers")
     uploaded_files = st.file_uploader("Choisissez un fichier", type=["txt", "pdf", "png", "jpg"], key="file_uploader")
 
-    if uploaded_files is not None:
-        for uploaded_file in uploaded_files:
-            save_uploaded_file(uploaded_file)
-
-    # Section pour proposer un code secret
-    st.header("Proposer un Code Secret")
-
-    code_secret = st.text_input("Entrez le code secret:")
-    st.warning("Assurez-vous de ne partager le code qu'avec les joueurs autorisés.")
-
-    if st.button("Valider le Code Secret"):
-        validate_secret_code(code_secret)
-
-def save_uploaded_file(uploaded_file):
-    file_path = os.path.join("downloads", uploaded_file.name)
-    with open(file_path, "wb") as file:
-        file.write(uploaded_file.read())
-    st.success(f"Fichier téléchargé avec succès: {uploaded_file.name}")
-
-def validate_secret_code(code_secret):
-    # Ici, vous pouvez implémenter la logique pour valider le code secret
-    # par exemple, le comparer à un code prédéfini ou le stocker pour une vérification ultérieure
-    st.success("Code secret validé avec succès!")
-
-if __name__ == "__main__":
-    main()
+#    if uploaded_files is not None:
+#        for uploaded_file in uploaded_files:
+#            save_uploaded_file(uploaded_file)
+#
+#    # Section pour proposer un code secret
+#    st.header("Proposer un Code Secret")
+#
+#    code_secret = st.text_input("Entrez le code secret:")
+#    st.warning("Assurez-vous de ne partager le code qu'avec les joueurs autorisés.")
+#
+#    if st.button("Valider le Code Secret"):
+#        validate_secret_code(code_secret)
+#
+#def save_uploaded_file(uploaded_file):
+#    file_path = os.path.join("downloads", uploaded_file.name)
+#    with open(file_path, "wb") as file:
+#        file.write(uploaded_file.read())
+#    st.success(f"Fichier téléchargé avec succès: {uploaded_file.name}")
+#
+#def validate_secret_code(code_secret):
+#    # Ici, vous pouvez implémenter la logique pour valider le code secret
+#    # par exemple, le comparer à un code prédéfini ou le stocker pour une vérification ultérieure
+#    st.success("Code secret validé avec succès!")
+#
+#if __name__ == "__main__":
+#    main()
 
 
 
