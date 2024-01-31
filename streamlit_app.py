@@ -7,7 +7,7 @@ CODE_SECRET_ATTENDU = "1234"
 
 def main():
     st.markdown(
-        "<h1 style='color:#3773A6; font-size:500%; text-align:center ';> Are you ready ?</h1><br>"
+        "<h1 style='color:#3773A6; font-size:550%; text-align:center ';> Are you ready ?</h1><br>"
         , unsafe_allow_html=True)
 
     st.markdown(
