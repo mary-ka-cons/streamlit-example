@@ -20,7 +20,7 @@ def main():
     download_files()
 
     # Section pour proposer un code secret
-    st.markdown("<h2 style='text-align: center;'>Proposer un Code Secret</h2>", unsafe_allow_html=True)
+    st.markdown("<h2 style='color:#A69937; font-size:200%; text-align:left '>Test your Code</h2>", unsafe_allow_html=True)
 
     code_secret = st.text_input("Entrez le code secret:")
 
