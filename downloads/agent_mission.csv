@@ -1,198 +1,198 @@
 NOM,CAPITALE,Agent ID,couleur_cheveux,lunettes,taches_rousseur,barbe,boucle_oreille,couleur_tee_shirt,chapeau
-Afghanistan,Kaboul,744854,Roux,Oui,Non,Non,Oui,Noir,Rien
-Afrique du Sud,Prétoria,154811,Brun,Non,Non,Oui,Non,Blanc,Casquette
-Albanie,Tirana,829449,Brun,Oui,Non,Non,Oui,Noir,Chapeau
-Algérie,Alger,625847,Blond,Non,Non,Oui,Oui,Rouge,Chapeau
-Allemagne,Berlin,275997,Roux,Non,Non,Oui,Oui,Rouge,Casquette
-Andorre,Andorre-la-Vieille,763085,Noir,Non,Oui,Non,Oui,Blanc,Casquette
-Angola,Luanda,833429,Brun,Non,Oui,Non,Oui,Blanc,Casquette
-Antigua-et-Barbuda,Saint John's,29305,Noir,Oui,Oui,Non,Oui,Noir,Béret
-Arabie saoudite,Riyad,182803,Noir,Oui,Oui,Oui,Non,Blanc,Rien
-Argentine,Buenos Aires,525259,Brun,Oui,Oui,Non,Non,Vert,Béret
-Arménie,Erevan,774439,Roux,Non,Non,Non,Oui,Bleu,Chapeau
-Australie,Canberra,711887,Roux,Oui,Non,Oui,Non,Jaune,Chapeau
-Autriche,Vienne,22976,Brun,Non,Oui,Non,Non,Bleu,Rien
-Azerbaïdjan,Bakou,749660,Blond,Non,Non,Non,Oui,Bleu,Rien
-Bahamas,Nassau,983047,Noir,Non,Non,Oui,Oui,Noir,Chapeau
-Bahreïn,Manama,161295,Brun,Non,Oui,Non,Oui,Bleu,Rien
-Bangladesh,Dacca,243866,Brun,Non,Oui,Oui,Non,Vert,Rien
-Barbade,Bridgetown,209347,Noir,Non,Non,Non,Non,Bleu,Casquette
-Belgique,Bruxelles,160832,Brun,Non,Oui,Oui,Oui,Blanc,Rien
-Bélize,Belmopan,656135,Noir,Non,Oui,Oui,Non,Jaune,Rien
-Bénin,Porto-Novo,33076,Brun,Oui,Oui,Oui,Oui,Jaune,Rien
-Bhoutan,Thimphou,690628,Noir,Oui,Oui,Non,Oui,Rouge,Casquette
-Biélorussie,Minsk,328492,Brun,Oui,Oui,Oui,Non,Blanc,Béret
-Birmanie,Naypyidaw,893681,Brun,Oui,Non,Non,Non,Blanc,Casquette
-Bolivie,Sucre / La Paz,525773,Brun,Oui,Non,Oui,Non,Rouge,Rien
-Bosnie-Herzégovine,Sarajevo,476335,Blond,Oui,Oui,Non,Non,Bleu,Béret
-Botswana,Gaborone,920354,Noir,Oui,Non,Oui,Non,Rouge,Béret
-Brésil,Brasilia,329612,Roux,Non,Non,Non,Non,Blanc,Rien
-Brunei,Bandar Seri Begawan,281092,Roux,Non,Non,Oui,Oui,Bleu,Chapeau
-Bulgarie,Sofia,995814,Roux,Oui,Oui,Oui,Oui,Bleu,Rien
-Burkina,Ouagadougou,626114,Noir,Non,Oui,Non,Oui,Blanc,Rien
-Burundi,Gitega,471368,Noir,Non,Oui,Non,Oui,Noir,Rien
-Cambodge,Phnom Penh,175913,Noir,Non,Non,Oui,Oui,Rouge,Chapeau
-Cameroun,Yaoundé,830793,Roux,Oui,Non,Oui,Oui,Bleu,Rien
-Canada,Ottawa,213343,Roux,Non,Oui,Non,Oui,Rouge,Chapeau
-Cap-Vert,Praia,65821,Noir,Oui,Oui,Non,Non,Bleu,Rien
-Centrafrique,Bangui,795261,Brun,Oui,Non,Non,Non,Vert,Casquette
-Chili,Santiago,241556,Noir,Non,Oui,Oui,Non,Rouge,Casquette
-Chine,Pékin,257012,Brun,Non,Non,Oui,Non,Bleu,Béret
-Chypre,Nicosie,40318,Blond,Non,Non,Oui,Oui,Bleu,Chapeau
-Colombie,Bogota,125766,Brun,Non,Non,Non,Oui,Rouge,Casquette
-Comores,Moroni,301872,Roux,Non,Oui,Non,Oui,Jaune,Rien
-Congo,Brazzaville,279624,Brun,Non,Oui,Non,Oui,Vert,Chapeau
-République démocratique du Congo,Kinshasa,617331,Brun,Oui,Oui,Oui,Non,Bleu,Rien
-Îles Cook,Avarua,523494,Roux,Non,Oui,Oui,Non,Noir,Casquette
-Corée du Nord,Pyongyang,354537,Brun,Non,Non,Non,Non,Jaune,Chapeau
-Corée du Sud,Séoul,494959,Roux,Non,Non,Non,Non,Rouge,Béret
-Costa Rica,San José,943766,Brun,Oui,Oui,Oui,Oui,Jaune,Chapeau
-Côte d'Ivoire,Yamoussoukro,931491,Noir,Non,Oui,Oui,Oui,Rouge,Chapeau
-Croatie,Zagreb,233841,Brun,Oui,Oui,Oui,Non,Bleu,Béret
-Cuba,La Havane,320812,Roux,Oui,Oui,Oui,Non,Vert,Rien
-Danemark,Copenhague,459322,Noir,Non,Oui,Non,Non,Bleu,Chapeau
-Djibouti,Djibouti,384198,Brun,Non,Oui,Non,Oui,Rouge,Chapeau
-République dominicaine,Saint-Domingue,179057,Noir,Non,Oui,Oui,Oui,Blanc,Béret
-Dominique,Roseau,336406,Noir,Non,Non,Non,Oui,Blanc,Béret
-Égypte,Le Caire,484305,Roux,Oui,Non,Oui,Non,Bleu,Chapeau
-Émirats arabes unis,Abou Dabi,709830,Noir,Oui,Non,Oui,Oui,Noir,Béret
-Équateur,Quito,57862,Roux,Oui,Oui,Oui,Non,Noir,Casquette
-Érythrée,Asmara,854443,Roux,Oui,Non,Oui,Oui,Vert,Casquette
-Espagne,Madrid,624342,Brun,Oui,Oui,Oui,Oui,Noir,Casquette
-Estonie,Tallinn,538526,Noir,Non,Non,Non,Oui,Blanc,Chapeau
-Eswatini,Mbabané,708519,Brun,Oui,Non,Non,Oui,Vert,Casquette
-États-Unis,Washington,510424,Noir,Oui,Non,Oui,Oui,Blanc,Béret
-Éthiopie,Addis Abeba,941205,Noir,Oui,Oui,Non,Oui,Bleu,Casquette
-Fidji,Suva,791602,Brun,Non,Oui,Oui,Non,Noir,Béret
-Finlande,Helsinki,24153,Brun,Oui,Non,Non,Non,Blanc,Rien
-France,Paris,887612,Roux,Oui,Non,Non,Non,Rouge,Chapeau
-Gabon,Libreville,781737,Noir,Oui,Non,Non,Oui,Jaune,Béret
-Gambie,Banjul,782317,Blond,Non,Non,Non,Non,Vert,Chapeau
-Géorgie,Tbilissi,758264,Brun,Oui,Non,Oui,Oui,Bleu,Chapeau
-Ghana,Accra,926191,Noir,Non,Non,Oui,Oui,Jaune,Chapeau
-Grèce,Athènes,765098,Blond,Non,Oui,Oui,Oui,Blanc,Béret
-Grenade,Saint-Georges,570521,Noir,Non,Oui,Non,Oui,Rouge,Casquette
-Guatémala,Guatémala,311362,Noir,Oui,Non,Oui,Oui,Rouge,Béret
-Guinée,Conakry,987668,Blond,Non,Oui,Oui,Oui,Vert,Béret
-Guinée équatoriale,Malabo,452374,Roux,Oui,Non,Oui,Non,Jaune,Casquette
-Guinée-Bissao,Bissao,491451,Roux,Non,Oui,Oui,Oui,Vert,Rien
-Guyana,Georgetown,99588,Noir,Non,Oui,Oui,Non,Rouge,Casquette
-Haïti,Port-au-Prince,23119,Roux,Oui,Non,Oui,Non,Blanc,Rien
-Honduras,Tégucigalpa,322461,Roux,Non,Non,Non,Non,Bleu,Chapeau
-Hongrie,Budapest,390395,Brun,Oui,Non,Oui,Non,Blanc,Casquette
-Inde,New Delhi,41958,Roux,Non,Oui,Non,Oui,Jaune,Rien
-Indonésie,Jakarta,313788,Noir,Non,Non,Non,Oui,Vert,Rien
-Irak,Bagdad,229144,Noir,Oui,Non,Oui,Non,Vert,Béret
-Iran,Téhéran,787283,Roux,Oui,Non,Non,Oui,Blanc,Béret
-Irlande,Dublin,840900,Roux,Non,Oui,Non,Non,Blanc,Casquette
-Islande,Reykjavik,261966,Roux,Non,Non,Non,Oui,Jaune,Béret
-Israël,,546915,Blond,Oui,Oui,Oui,Oui,Blanc,Casquette
-Italie,Rome,722833,Noir,Non,Non,Non,Non,Jaune,Béret
-Jamaïque,Kingston,422815,Noir,Oui,Oui,Non,Non,Rouge,Casquette
-Japon,Tokyo,463113,Blond,Oui,Oui,Oui,Non,Bleu,Casquette
-Jordanie,Amman,152299,Blond,Oui,Non,Oui,Non,Vert,Chapeau
-Kazakhstan,Nour-Soultan,81358,Noir,Oui,Non,Oui,Non,Noir,Casquette
-Kénya,Nairobi,807978,Blond,Non,Oui,Oui,Oui,Bleu,Rien
-Kirghizstan,Bichkek,910606,Blond,Non,Oui,Oui,Oui,Noir,Chapeau
-Kiribati,Bairiki,253374,Brun,Oui,Oui,Non,Non,Noir,Casquette
-Kosovo,Pristina,374647,Roux,Non,Oui,Oui,Non,Blanc,Casquette
-Koweït,Koweït,474998,Roux,Non,Oui,Non,Non,Blanc,Chapeau
-Laos,Vientiane,624289,Blond,Oui,Non,Non,Oui,Noir,Chapeau
-Lésotho,Maséru,924271,Roux,Oui,Oui,Oui,Oui,Blanc,Chapeau
-Lettonie,Riga,284853,Blond,Oui,Non,Oui,Non,Rouge,Casquette
-Liban,Beyrouth,161352,Roux,Oui,Oui,Non,Oui,Jaune,Rien
-Libéria,Monrovia,566922,Noir,Non,Oui,Non,Non,Rouge,Béret
-Libye,Tripoli,614022,Roux,Non,Oui,Non,Oui,Bleu,Chapeau
-Liechtenstein,Vaduz,409863,Noir,Oui,Non,Oui,Non,Jaune,Chapeau
-Lituanie,Vilnius,77446,Brun,Non,Oui,Oui,Oui,Vert,Béret
-Luxembourg,Luxembourg,820141,Noir,Non,Non,Non,Non,Blanc,Béret
-Macédoine du Nord,Skopje,899189,Noir,Oui,Non,Oui,Oui,Noir,Chapeau
-Madagascar,Antananarivo (Tananarive),337985,Noir,Non,Oui,Oui,Oui,Bleu,Chapeau
-Malaisie,Kuala Lumpur,958932,Roux,Non,Oui,Non,Non,Noir,Rien
-Malawi,Lilongwé,643779,Brun,Non,Oui,Oui,Oui,Vert,Rien
-Maldives,Malé,465090,Noir,Non,Non,Oui,Oui,Jaune,Rien
-Mali,Bamako,694415,Brun,Non,Non,Non,Non,Jaune,Rien
-Malte,La Valette,454227,Noir,Oui,Non,Oui,Oui,Jaune,Casquette
-Maroc,Rabat,787858,Blond,Oui,Non,Non,Non,Bleu,Béret
-Îles Marshall,Delap-Uliga-Darrit,483782,Roux,Oui,Non,Non,Non,Blanc,Chapeau
-Maurice,Port-Louis,49289,Blond,Non,Oui,Oui,Oui,Blanc,Chapeau
-Mauritanie,Nouakchott,752210,Noir,Oui,Non,Oui,Oui,Blanc,Rien
-Mexique,Mexico,466384,Blond,Oui,Oui,Oui,Oui,Bleu,Casquette
-Micronésie,Palikir,28548,Roux,Non,Oui,Oui,Oui,Blanc,Béret
-Moldavie,Chisinau,448312,Brun,Oui,Oui,Non,Non,Noir,Chapeau
-Monaco,Monaco,288657,Blond,Oui,Oui,Non,Oui,Noir,Béret
-Mongolie,Oulan-Bator,819527,Blond,Non,Oui,Non,Oui,Rouge,Casquette
-Monténégro,Podgorica,556753,Brun,Oui,Non,Non,Non,Blanc,Casquette
-Mozambique,Maputo,239774,Noir,Oui,Non,Oui,Non,Noir,Rien
-Namibie,Windhoek,197980,Roux,Oui,Oui,Non,Oui,Bleu,Rien
-Nauru,Yaren,117662,Brun,Non,Non,Oui,Oui,Rouge,Casquette
-Népal,Katmandou,273,Noir,Oui,Non,Non,Non,Noir,Chapeau
-Nicaragua,Managua,707354,Blond,Non,Oui,Non,Oui,Noir,Béret
-Niger,Niamey,277769,Roux,Non,Non,Oui,Oui,Rouge,Casquette
-Nigéria,Abuja,468393,Noir,Non,Non,Oui,Non,Bleu,Rien
-Niue,Alofi,651251,Roux,Oui,Oui,Oui,Oui,Rouge,Béret
-Norvège,Oslo,345777,Blond,Oui,Non,Oui,Oui,Bleu,Rien
-Nouvelle-Zélande,Wellington,607687,Noir,Non,Oui,Non,Oui,Noir,Rien
-Oman,Mascate,9950,Blond,Non,Non,Non,Oui,Jaune,Casquette
-Ouganda,Kampala,727515,Blond,Oui,Non,Oui,Oui,Bleu,Casquette
-Ouzbékistan,Tachkent,393225,Blond,Non,Non,Oui,Non,Bleu,Chapeau
-Pakistan,Islamabad,955814,Blond,Non,Oui,Non,Oui,Vert,Rien
-Palaos,Melekeok,448179,Blond,Oui,Oui,Oui,Non,Rouge,Béret
-Panama,Panama,400260,Blond,Oui,Oui,Oui,Non,Jaune,Casquette
-Papouasie-Nouvelle-Guinée,Port Moresby,753570,Roux,Oui,Oui,Oui,Non,Bleu,Béret
-Paraguay,Assomption (Asuncion),652289,Noir,Non,Oui,Oui,Non,Bleu,Rien
-Pays-Bas,Amsterdam,111439,Roux,Oui,Non,Non,Oui,Noir,Béret
-Pérou,Lima,198227,Roux,Oui,Non,Oui,Non,Jaune,Béret
-Philippines,Manille,905639,Roux,Oui,Non,Non,Non,Blanc,Béret
-Pologne,Varsovie,113681,Roux,Non,Oui,Non,Non,Jaune,Casquette
-Portugal,Lisbonne,248551,Roux,Oui,Oui,Non,Oui,Blanc,Rien
-Qatar,Doha,373747,Roux,Oui,Non,Non,Non,Jaune,Rien
-Roumanie,Bucarest,332153,Blond,Non,Non,Oui,Non,Noir,Casquette
-Royaume-Uni,Londres,645397,Noir,Oui,Non,Oui,Non,Noir,Chapeau
-Russie,Moscou,510112,Noir,Non,Oui,Non,Oui,Blanc,Rien
-Rwanda,Kigali,659472,Blond,Non,Non,Oui,Oui,Jaune,Béret
-Saint-Christophe-et-Niévès,Basseterre,750298,Blond,Non,Non,Oui,Oui,Jaune,Rien
-Sainte-Lucie,Castries,286261,Blond,Oui,Non,Oui,Non,Noir,Casquette
-Saint-Marin,Saint-Marin,161216,Roux,Oui,Non,Non,Oui,Bleu,Casquette
-Saint-Vincent-et-les-Grenadines,Kingstown,699242,Blond,Oui,Non,Oui,Non,Bleu,Casquette
-Salomon,Honiara,1786,Roux,Non,Oui,Oui,Non,Jaune,Rien
-Salvador,San Salvador,549984,Roux,Oui,Oui,Oui,Oui,Bleu,Béret
-Samoa,Apia,376205,Roux,Non,Oui,Non,Oui,Blanc,Chapeau
-Sao Tomé-et-Principe,Sao Tomé,411642,Brun,Non,Oui,Oui,Non,Blanc,Chapeau
-Sénégal,Dakar,35087,Brun,Non,Oui,Non,Oui,Jaune,Chapeau
-Serbie,Belgrade,718181,Brun,Non,Non,Non,Oui,Rouge,Béret
-Seychelles,Victoria,79975,Roux,Non,Non,Non,Non,Vert,Chapeau
-Sierra Leone,Freetown,329171,Noir,Oui,Non,Oui,Non,Bleu,Rien
-Singapour,Singapour,407909,Blond,Oui,Oui,Non,Non,Bleu,Béret
-Slovaquie,Bratislava,999562,Brun,Oui,Oui,Non,Oui,Bleu,Rien
-Slovénie,Ljubljana,384737,Brun,Non,Oui,Oui,Oui,Noir,Rien
-Somalie,Mogadiscio,613588,Blond,Non,Oui,Oui,Non,Rouge,Chapeau
-Soudan,Khartoum,683481,Roux,Oui,Non,Oui,Oui,Bleu,Casquette
-Soudan du Sud,Djouba,431284,Roux,Non,Non,Oui,Non,Bleu,Rien
-Sri Lanka,Sri Jayewardenepura-Kotte,86016,Roux,Oui,Non,Oui,Non,Noir,Chapeau
-Suède,Stockholm,618480,Blond,Oui,Non,Non,Non,Bleu,Rien
-Suisse,Berne,741061,Noir,Non,Oui,Oui,Non,Bleu,Chapeau
-Suriname,Paramaribo,947394,Blond,Oui,Non,Non,Oui,Noir,Béret
-Syrie,Damas,291846,Blond,Oui,Non,Oui,Non,Blanc,Casquette
-Tadjikistan,Douchanbé,974326,Blond,Oui,Non,Oui,Oui,Bleu,Béret
-Tanzanie,Dodoma,420964,Brun,Oui,Oui,Oui,Non,Vert,Chapeau
-Tchad,Ndjamena,820140,Roux,Non,Oui,Oui,Non,Jaune,Chapeau
-Tchéquie,Prague,777828,Blond,Non,Non,Non,Non,Bleu,Casquette
-Thaïlande,Bangkok,948977,Roux,Oui,Non,Oui,Oui,Noir,Chapeau
-Timor oriental,Dili,6800,Roux,Oui,Non,Non,Non,Vert,Rien
-Togo,Lomé,428362,Noir,Oui,Oui,Non,Non,Bleu,Rien
-Tonga,Nuku'alofa,318455,Blond,Non,Non,Non,Non,Jaune,Rien
-Trinité-et-Tobago,Port-d'Espagne (Port of Spain),509137,Noir,Oui,Oui,Oui,Non,Rouge,Chapeau
-Tunisie,Tunis,824189,Roux,Oui,Oui,Non,Non,Bleu,Chapeau
-Turkménistan,Achgabat,889739,Noir,Non,Non,Oui,Non,Blanc,Rien
-Turquie,Ankara,222168,Brun,Non,Non,Oui,Non,Rouge,Rien
-Tuvalu,Vaiaku,452006,Brun,Non,Non,Non,Oui,Blanc,Béret
-Ukraine,Kiev,647987,Brun,Oui,Oui,Oui,Oui,Jaune,Rien
-Uruguay,Montévidéo,870952,Blond,Oui,Oui,Non,Non,Bleu,Rien
-Vanuatu,Port-Vila,384414,Roux,Non,Oui,Non,Non,Bleu,Chapeau
-Vatican,,888506,Roux,Non,Oui,Oui,Non,Vert,Béret
-Vénézuéla,Caracas,59482,Brun,Oui,Oui,Oui,Non,Vert,Béret
-Vietnam,Hanoï,85204,Noir,Oui,Oui,Non,Non,Blanc,Chapeau
-Yémen,Sanaa,791770,Roux,Oui,Oui,Oui,Non,Bleu,Casquette
-Zambie,Lusaka,287286,Blond,Non,Oui,Oui,Non,Bleu,Rien
-Zimbabwé,Hararé,802639,Blond,Non,Oui,Oui,Oui,Rouge,Chapeau
+Afghanistan,Kaboul,558864,Roux,Oui,Oui,Non,Oui,Jaune,Chapeau
+Afrique du Sud,Prétoria,225713,Blond,Oui,Oui,Oui,Oui,Vert,Béret
+Albanie,Tirana,927719,Roux,Non,Oui,Oui,Oui,Vert,Rien
+Algérie,Alger,577150,Blond,Oui,Non,Non,Oui,Bleu,Chapeau
+Allemagne,Berlin,771218,Noir,Oui,Non,Oui,Non,Noir,Béret
+Andorre,Andorre-la-Vieille,217985,Roux,Oui,Non,Non,Oui,Jaune,Béret
+Angola,Luanda,671386,Noir,Oui,Non,Oui,Non,Noir,Chapeau
+Antigua-et-Barbuda,Saint John's,214121,Noir,Non,Non,Oui,Oui,Vert,Chapeau
+Arabie saoudite,Riyad,537888,Blond,Oui,Oui,Oui,Non,Vert,Béret
+Argentine,Buenos Aires,672708,Brun,Non,Non,Oui,Oui,Bleu,Rien
+Arménie,Erevan,837475,Roux,Oui,Oui,Non,Non,Blanc,Béret
+Australie,Canberra,450526,Noir,Non,Non,Non,Non,Noir,Casquette
+Autriche,Vienne,482886,Noir,Oui,Non,Oui,Oui,Rouge,Rien
+Azerbaïdjan,Bakou,141275,Brun,Oui,Non,Non,Non,Vert,Rien
+Bahamas,Nassau,353876,Blond,Oui,Oui,Oui,Non,Blanc,Rien
+Bahreïn,Manama,918610,Roux,Non,Non,Oui,Non,Bleu,Casquette
+Bangladesh,Dacca,250221,Noir,Non,Oui,Non,Oui,Bleu,Chapeau
+Barbade,Bridgetown,526296,Brun,Non,Oui,Oui,Oui,Noir,Chapeau
+Belgique,Bruxelles,457272,Roux,Non,Non,Oui,Oui,Bleu,Chapeau
+Bélize,Belmopan,797371,Blond,Non,Oui,Oui,Non,Blanc,Casquette
+Bénin,Porto-Novo,716485,Roux,Non,Non,Oui,Non,Blanc,Béret
+Bhoutan,Thimphou,773184,Roux,Non,Oui,Oui,Non,Bleu,Chapeau
+Biélorussie,Minsk,714425,Roux,Oui,Non,Oui,Non,Blanc,Chapeau
+Birmanie,Naypyidaw,306935,Blond,Non,Non,Oui,Non,Vert,Rien
+Bolivie,Sucre / La Paz,454796,Noir,Oui,Non,Non,Non,Noir,Chapeau
+Bosnie-Herzégovine,Sarajevo,810259,Brun,Non,Oui,Oui,Non,Bleu,Chapeau
+Botswana,Gaborone,840381,Brun,Oui,Oui,Oui,Non,Jaune,Casquette
+Brésil,Brasilia,331073,Noir,Oui,Oui,Non,Oui,Rouge,Béret
+Brunei,Bandar Seri Begawan,73579,Blond,Non,Oui,Non,Non,Noir,Béret
+Bulgarie,Sofia,609727,Brun,Non,Oui,Non,Non,Jaune,Béret
+Burkina,Ouagadougou,96946,Brun,Oui,Non,Non,Non,Rouge,Chapeau
+Burundi,Gitega,577540,Brun,Oui,Non,Oui,Oui,Rouge,Casquette
+Cambodge,Phnom Penh,320880,Blond,Non,Non,Oui,Non,Vert,Rien
+Cameroun,Yaoundé,321649,Roux,Oui,Oui,Non,Non,Blanc,Casquette
+Canada,Ottawa,195131,Noir,Oui,Non,Oui,Oui,Vert,Chapeau
+Cap-Vert,Praia,266747,Roux,Non,Non,Non,Oui,Vert,Chapeau
+Centrafrique,Bangui,481340,Blond,Oui,Non,Non,Oui,Jaune,Béret
+Chili,Santiago,695146,Noir,Oui,Non,Oui,Non,Vert,Béret
+Chine,Pékin,494917,Brun,Non,Oui,Oui,Oui,Rouge,Chapeau
+Chypre,Nicosie,663841,Brun,Non,Oui,Oui,Oui,Noir,Casquette
+Colombie,Bogota,841911,Noir,Non,Non,Oui,Oui,Jaune,Rien
+Comores,Moroni,648917,Roux,Oui,Non,Oui,Non,Vert,Chapeau
+Congo,Brazzaville,769018,Brun,Oui,Non,Oui,Non,Jaune,Chapeau
+République démocratique du Congo,Kinshasa,54965,Noir,Non,Non,Oui,Oui,Rouge,Casquette
+Îles Cook,Avarua,154107,Roux,Oui,Oui,Non,Oui,Noir,Béret
+Corée du Nord,Pyongyang,791258,Roux,Oui,Oui,Non,Oui,Bleu,Casquette
+Corée du Sud,Séoul,826175,Brun,Non,Oui,Non,Oui,Rouge,Rien
+Costa Rica,San José,554656,Brun,Non,Oui,Oui,Non,Noir,Chapeau
+Côte d'Ivoire,Yamoussoukro,22484,Roux,Oui,Non,Non,Non,Vert,Béret
+Croatie,Zagreb,455399,Noir,Non,Non,Oui,Non,Vert,Béret
+Cuba,La Havane,111261,Brun,Non,Non,Oui,Oui,Blanc,Rien
+Danemark,Copenhague,769682,Roux,Oui,Oui,Oui,Non,Bleu,Rien
+Djibouti,Djibouti,729404,Roux,Oui,Non,Oui,Non,Blanc,Casquette
+République dominicaine,Saint-Domingue,368519,Brun,Oui,Non,Non,Non,Vert,Rien
+Dominique,Roseau,649902,Brun,Non,Oui,Oui,Non,Vert,Casquette
+Égypte,Le Caire,623470,Noir,Non,Non,Oui,Oui,Jaune,Casquette
+Émirats arabes unis,Abou Dabi,719900,Roux,Oui,Non,Non,Non,Jaune,Rien
+Équateur,Quito,724972,Roux,Non,Non,Non,Non,Rouge,Casquette
+Érythrée,Asmara,477239,Roux,Non,Non,Non,Non,Blanc,Chapeau
+Espagne,Madrid,935728,Blond,Non,Non,Non,Oui,Jaune,Casquette
+Estonie,Tallinn,370536,Brun,Oui,Non,Non,Non,Blanc,Chapeau
+Eswatini,Mbabané,947671,Brun,Non,Non,Oui,Oui,Rouge,Rien
+États-Unis,Washington,489620,Blond,Oui,Non,Non,Oui,Rouge,Casquette
+Éthiopie,Addis Abeba,217693,Noir,Non,Non,Oui,Oui,Jaune,Rien
+Fidji,Suva,906574,Roux,Oui,Non,Oui,Non,Blanc,Casquette
+Finlande,Helsinki,115092,Brun,Non,Oui,Non,Oui,Vert,Casquette
+France,Paris,660139,Noir,Oui,Oui,Non,Oui,Vert,Casquette
+Gabon,Libreville,179064,Roux,Oui,Oui,Non,Non,Jaune,Béret
+Gambie,Banjul,983446,Noir,Non,Oui,Oui,Oui,Bleu,Béret
+Géorgie,Tbilissi,228345,Roux,Non,Oui,Non,Oui,Noir,Béret
+Ghana,Accra,708322,Roux,Non,Oui,Oui,Non,Noir,Rien
+Grèce,Athènes,229354,Noir,Oui,Oui,Oui,Oui,Bleu,Rien
+Grenade,Saint-Georges,900269,Noir,Non,Oui,Oui,Oui,Jaune,Chapeau
+Guatémala,Guatémala,250299,Roux,Oui,Non,Oui,Non,Vert,Chapeau
+Guinée,Conakry,881706,Blond,Non,Oui,Oui,Non,Jaune,Rien
+Guinée équatoriale,Malabo,66661,Brun,Non,Non,Non,Oui,Rouge,Béret
+Guinée-Bissao,Bissao,691973,Brun,Oui,Non,Oui,Oui,Bleu,Chapeau
+Guyana,Georgetown,145257,Brun,Non,Oui,Oui,Oui,Noir,Chapeau
+Haïti,Port-au-Prince,25767,Blond,Non,Non,Non,Non,Jaune,Béret
+Honduras,Tégucigalpa,72168,Noir,Oui,Non,Oui,Non,Jaune,Casquette
+Hongrie,Budapest,175364,Blond,Oui,Non,Non,Oui,Blanc,Chapeau
+Inde,New Delhi,820262,Brun,Oui,Oui,Non,Non,Vert,Chapeau
+Indonésie,Jakarta,466753,Noir,Oui,Oui,Oui,Oui,Jaune,Casquette
+Irak,Bagdad,93652,Noir,Non,Oui,Oui,Oui,Bleu,Rien
+Iran,Téhéran,883396,Noir,Oui,Non,Non,Non,Vert,Rien
+Irlande,Dublin,19569,Roux,Non,Non,Oui,Oui,Blanc,Chapeau
+Islande,Reykjavik,429653,Roux,Oui,Oui,Oui,Non,Blanc,Rien
+Israël,,849913,Noir,Oui,Non,Non,Oui,Blanc,Béret
+Italie,Rome,914826,Blond,Non,Oui,Oui,Non,Bleu,Chapeau
+Jamaïque,Kingston,312416,Brun,Oui,Non,Non,Oui,Blanc,Béret
+Japon,Tokyo,929262,Roux,Oui,Oui,Oui,Oui,Rouge,Chapeau
+Jordanie,Amman,828628,Blond,Non,Oui,Non,Oui,Vert,Rien
+Kazakhstan,Nour-Soultan,732074,Noir,Non,Oui,Non,Non,Jaune,Rien
+Kénya,Nairobi,148995,Blond,Oui,Oui,Non,Oui,Vert,Béret
+Kirghizstan,Bichkek,586734,Noir,Non,Non,Oui,Non,Blanc,Béret
+Kiribati,Bairiki,613557,Noir,Oui,Non,Oui,Non,Vert,Chapeau
+Kosovo,Pristina,756258,Brun,Non,Oui,Non,Non,Jaune,Chapeau
+Koweït,Koweït,665494,Blond,Non,Oui,Oui,Oui,Bleu,Chapeau
+Laos,Vientiane,14874,Roux,Oui,Non,Oui,Oui,Noir,Chapeau
+Lésotho,Maséru,265075,Roux,Non,Non,Oui,Oui,Blanc,Casquette
+Lettonie,Riga,577818,Brun,Non,Non,Non,Oui,Noir,Casquette
+Liban,Beyrouth,45190,Roux,Non,Oui,Oui,Non,Jaune,Chapeau
+Libéria,Monrovia,558546,Brun,Non,Oui,Non,Oui,Jaune,Béret
+Libye,Tripoli,314000,Blond,Oui,Non,Non,Oui,Blanc,Béret
+Liechtenstein,Vaduz,931788,Roux,Oui,Oui,Non,Oui,Blanc,Béret
+Lituanie,Vilnius,170414,Roux,Non,Non,Non,Non,Bleu,Rien
+Luxembourg,Luxembourg,282476,Brun,Non,Oui,Oui,Non,Rouge,Béret
+Macédoine du Nord,Skopje,207295,Brun,Non,Oui,Non,Non,Vert,Rien
+Madagascar,Antananarivo (Tananarive),230411,Brun,Oui,Oui,Non,Oui,Noir,Casquette
+Malaisie,Kuala Lumpur,555426,Noir,Non,Oui,Oui,Non,Jaune,Casquette
+Malawi,Lilongwé,982006,Roux,Non,Oui,Non,Non,Blanc,Chapeau
+Maldives,Malé,699708,Brun,Non,Non,Oui,Non,Vert,Chapeau
+Mali,Bamako,729051,Brun,Oui,Oui,Oui,Non,Noir,Chapeau
+Malte,La Valette,533455,Brun,Non,Oui,Oui,Oui,Blanc,Casquette
+Maroc,Rabat,88012,Noir,Oui,Oui,Oui,Oui,Rouge,Rien
+Îles Marshall,Delap-Uliga-Darrit,387407,Brun,Oui,Oui,Oui,Oui,Rouge,Béret
+Maurice,Port-Louis,839688,Noir,Non,Non,Oui,Non,Noir,Chapeau
+Mauritanie,Nouakchott,268310,Noir,Oui,Non,Non,Non,Rouge,Rien
+Mexique,Mexico,799211,Blond,Oui,Non,Non,Non,Noir,Rien
+Micronésie,Palikir,807505,Blond,Non,Non,Non,Non,Rouge,Béret
+Moldavie,Chisinau,545413,Roux,Oui,Non,Non,Oui,Blanc,Casquette
+Monaco,Monaco,840981,Noir,Oui,Non,Non,Non,Bleu,Chapeau
+Mongolie,Oulan-Bator,73540,Brun,Non,Oui,Non,Oui,Bleu,Rien
+Monténégro,Podgorica,417968,Noir,Oui,Oui,Non,Oui,Rouge,Rien
+Mozambique,Maputo,847767,Roux,Non,Oui,Non,Oui,Blanc,Casquette
+Namibie,Windhoek,721282,Roux,Oui,Non,Oui,Non,Bleu,Béret
+Nauru,Yaren,899158,Blond,Oui,Non,Non,Non,Jaune,Rien
+Népal,Katmandou,820701,Blond,Oui,Oui,Non,Non,Vert,Chapeau
+Nicaragua,Managua,623942,Blond,Oui,Oui,Oui,Non,Noir,Béret
+Niger,Niamey,237257,Brun,Non,Non,Oui,Oui,Rouge,Béret
+Nigéria,Abuja,21259,Brun,Oui,Oui,Oui,Oui,Rouge,Béret
+Niue,Alofi,57423,Blond,Oui,Non,Oui,Oui,Noir,Chapeau
+Norvège,Oslo,196064,Roux,Oui,Oui,Non,Non,Bleu,Chapeau
+Nouvelle-Zélande,Wellington,679957,Noir,Non,Non,Oui,Oui,Jaune,Béret
+Oman,Mascate,584867,Noir,Non,Oui,Oui,Oui,Blanc,Casquette
+Ouganda,Kampala,380861,Noir,Oui,Oui,Oui,Non,Blanc,Béret
+Ouzbékistan,Tachkent,679724,Brun,Oui,Non,Non,Non,Jaune,Béret
+Pakistan,Islamabad,204502,Brun,Oui,Non,Oui,Non,Blanc,Casquette
+Palaos,Melekeok,433620,Blond,Oui,Oui,Non,Oui,Vert,Béret
+Panama,Panama,402127,Noir,Oui,Oui,Oui,Oui,Jaune,Chapeau
+Papouasie-Nouvelle-Guinée,Port Moresby,684542,Roux,Non,Non,Non,Oui,Vert,Chapeau
+Paraguay,Assomption (Asuncion),807050,Noir,Oui,Non,Oui,Oui,Blanc,Casquette
+Pays-Bas,Amsterdam,580410,Brun,Oui,Oui,Non,Non,Noir,Casquette
+Pérou,Lima,273800,Noir,Oui,Oui,Non,Oui,Rouge,Béret
+Philippines,Manille,779058,Noir,Non,Non,Non,Oui,Noir,Béret
+Pologne,Varsovie,618286,Noir,Non,Non,Oui,Oui,Rouge,Casquette
+Portugal,Lisbonne,393144,Blond,Non,Non,Oui,Oui,Bleu,Béret
+Qatar,Doha,252949,Roux,Non,Oui,Non,Oui,Jaune,Béret
+Roumanie,Bucarest,304741,Noir,Oui,Oui,Non,Non,Vert,Chapeau
+Royaume-Uni,Londres,931568,Noir,Oui,Non,Non,Non,Vert,Casquette
+Russie,Moscou,34743,Noir,Non,Non,Oui,Non,Vert,Béret
+Rwanda,Kigali,597730,Blond,Non,Non,Non,Oui,Vert,Chapeau
+Saint-Christophe-et-Niévès,Basseterre,304031,Roux,Non,Oui,Oui,Oui,Vert,Rien
+Sainte-Lucie,Castries,709441,Brun,Non,Oui,Non,Oui,Jaune,Casquette
+Saint-Marin,Saint-Marin,868222,Blond,Non,Oui,Oui,Non,Blanc,Rien
+Saint-Vincent-et-les-Grenadines,Kingstown,770316,Brun,Non,Non,Non,Oui,Jaune,Rien
+Salomon,Honiara,125306,Noir,Oui,Non,Oui,Non,Noir,Casquette
+Salvador,San Salvador,657019,Blond,Oui,Non,Non,Non,Blanc,Casquette
+Samoa,Apia,774705,Roux,Oui,Non,Oui,Oui,Bleu,Casquette
+Sao Tomé-et-Principe,Sao Tomé,802370,Roux,Non,Oui,Non,Oui,Bleu,Chapeau
+Sénégal,Dakar,712200,Noir,Oui,Oui,Non,Non,Bleu,Béret
+Serbie,Belgrade,216276,Blond,Oui,Non,Non,Oui,Vert,Chapeau
+Seychelles,Victoria,776109,Blond,Non,Non,Non,Oui,Vert,Casquette
+Sierra Leone,Freetown,915450,Brun,Non,Oui,Non,Non,Bleu,Chapeau
+Singapour,Singapour,325398,Roux,Oui,Oui,Oui,Oui,Bleu,Béret
+Slovaquie,Bratislava,798443,Roux,Non,Non,Oui,Oui,Noir,Casquette
+Slovénie,Ljubljana,333740,Brun,Non,Non,Oui,Oui,Bleu,Chapeau
+Somalie,Mogadiscio,716636,Noir,Oui,Non,Non,Non,Jaune,Chapeau
+Soudan,Khartoum,683481,Brun,Oui,Oui,Oui,Non,Vert,Chapeau
+Soudan du Sud,Djouba,124827,Roux,Oui,Non,Non,Oui,Blanc,Rien
+Sri Lanka,Sri Jayewardenepura-Kotte,487229,Roux,Non,Non,Non,Oui,Vert,Chapeau
+Suède,Stockholm,787296,Roux,Non,Oui,Oui,Non,Blanc,Casquette
+Suisse,Berne,96549,Noir,Non,Oui,Oui,Non,Noir,Rien
+Suriname,Paramaribo,338938,Brun,Non,Non,Oui,Non,Rouge,Rien
+Syrie,Damas,220946,Roux,Non,Non,Non,Oui,Vert,Casquette
+Tadjikistan,Douchanbé,859970,Blond,Oui,Oui,Oui,Oui,Jaune,Rien
+Tanzanie,Dodoma,324244,Roux,Non,Oui,Non,Oui,Blanc,Béret
+Tchad,Ndjamena,229164,Roux,Oui,Non,Oui,Non,Blanc,Casquette
+Tchéquie,Prague,310030,Brun,Non,Oui,Non,Oui,Rouge,Chapeau
+Thaïlande,Bangkok,356093,Noir,Non,Oui,Non,Oui,Noir,Béret
+Timor oriental,Dili,465594,Brun,Oui,Oui,Non,Non,Noir,Casquette
+Togo,Lomé,128197,Noir,Non,Non,Non,Oui,Vert,Rien
+Tonga,Nuku'alofa,173617,Blond,Non,Oui,Non,Oui,Vert,Rien
+Trinité-et-Tobago,Port-d'Espagne (Port of Spain),874794,Blond,Oui,Non,Oui,Non,Blanc,Casquette
+Tunisie,Tunis,212348,Noir,Oui,Non,Non,Oui,Bleu,Béret
+Turkménistan,Achgabat,276882,Roux,Non,Oui,Non,Oui,Blanc,Béret
+Turquie,Ankara,936825,Brun,Non,Oui,Non,Oui,Vert,Béret
+Tuvalu,Vaiaku,685144,Blond,Oui,Oui,Non,Non,Noir,Rien
+Ukraine,Kiev,980221,Roux,Non,Non,Non,Non,Jaune,Chapeau
+Uruguay,Montévidéo,291269,Brun,Oui,Oui,Non,Non,Bleu,Chapeau
+Vanuatu,Port-Vila,460524,Noir,Oui,Oui,Oui,Oui,Rouge,Casquette
+Vatican,,697651,Noir,Oui,Non,Non,Non,Noir,Casquette
+Vénézuéla,Caracas,729953,Blond,Oui,Oui,Non,Oui,Vert,Béret
+Vietnam,Hanoï,647283,Roux,Non,Non,Non,Oui,Jaune,Rien
+Yémen,Sanaa,967844,Brun,Non,Oui,Non,Oui,Jaune,Chapeau
+Zambie,Lusaka,175449,Noir,Non,Oui,Oui,Oui,Blanc,Chapeau
+Zimbabwé,Hararé,146545,Brun,Oui,Non,Oui,Non,Bleu,Casquette

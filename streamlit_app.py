@@ -3,7 +3,9 @@ import os
 import base64
 
 # Définir le code secret global
-CODE_SECRET_ATTENDU = "1234"
+CODE_SECRET_ATTENDU = "CLAIM"
+code_etape_agent_id = "683481"
+code_etape_cesar = "ENCKO"
 
 def main():
     st.markdown(
@@ -37,8 +39,12 @@ def validate_secret_code(code_secret):
     if code_secret == CODE_SECRET_ATTENDU:
         st.success("Code secret validé avec succès!")
         st.balloons()
+    if code_secret == code_etape_agent_id:
+        st.error("Voyons! Cela serait bien trop simple ! Il faut chercher encore")
+    if code_secret == code_etape_cesar:
+        st.error("On tient quelque chose, mais il semble que ce soit crypté !")
     else:
-        st.error("Error !!!")
+        st.error("Tu n'y es pas du tout...")
 
 def download_files():
     files = os.listdir("downloads")
