@@ -21,7 +21,7 @@ def main():
     st.markdown("<h2 style='color:#A69937; font-size:250%; text-align:center '><br><br>👁️ Test your Code 👁️</h2>", unsafe_allow_html=True)
     st.markdown("<p style='color:#A69937; font-size:100%; text-align:center '>Vous aurez besoin de cliquer sur le bouton 'Valider' pour tester votre code.</h2>", unsafe_allow_html=True)
 
-    #code_secret = st.text_input("Entrez le code secret:")
+    code_secret = st.text_input("Entrez le code secret:")
 
     if st.button("Valider le Code Secret"):
         validate_secret_code(code_secret)   
@@ -37,7 +37,7 @@ def validate_secret_code(code_secret):
     if code_secret == CODE_SECRET_ATTENDU:
         st.success("Code secret validé avec succès!")
     else:
-        st.error("Code secret incorrect. Veuillez réessayer.")
+        st.error("Error !!!")
 
 def download_files():
     files = os.listdir("downloads")
