@@ -11,7 +11,7 @@ def main():
         , unsafe_allow_html=True)
 
     st.markdown(
-        "<p style='color:#3773A6; font-size:100%; text-align:center '>Welcome to you detective ! <br> Pour cet escape game vous aurez besoin de télécharger les fichiers laissés à votre disposition. <br> Ceux-ci vous aideront à trouver des codes et des indices vous permettant de trouver un code final à saisir ci-dessous ! <br> N'oubliez pas que chaque fichier doit être utilisé pour arriver à découvrir le code final ! </p>"
+        "<p style='color:#3773A6; font-size:100%; text-align:center '>Welcome to you detective ! 🕵️ <br> Pour cet escape game vous aurez besoin de télécharger les fichiers laissés à votre disposition. <br> Ceux-ci vous aideront à trouver des codes et des indices vous permettant de trouver un code final à saisir ci-dessous ! <br> N'oubliez pas que chaque fichier doit être utilisé pour arriver à découvrir le code final ! </p>"
         , unsafe_allow_html=True)
 
     # Bouton de téléchargement pour les utilisateurs
