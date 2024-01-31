@@ -1,4 +1,18 @@
 
+## Set-Up Streamlit
+########## Set the tab name
+st.set_page_config(
+    page_title="Contest",
+    page_icon="🧿",
+
+)
+
+
+########### Set the page title
+st.title("Live Results")
+
+
+
 
 import streamlit as st
 import os
