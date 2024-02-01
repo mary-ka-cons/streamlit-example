@@ -1,107 +1,13 @@
-import streamlit as st
-import os
-import base64
+######import streamlit as st
 
 
-# Définir le code secret global
-CODE_SECRET_ATTENDU = "CLAIM"
-code_etape_agent_id = "683481"
-code_etape_cesar = "ENCKO"
+## Set-Up Streamlit
+########## Set the tab name
+st.set_page_config(
+    page_title="Keep-it",
+    page_icon="🧿",
 
-def main():
-    st.markdown(
-        "<h1 style='color:#3773A6; font-size:550%; text-align:center ';> Are you ready ?</h1><br>"
-        , unsafe_allow_html=True)
-
-    st.markdown(
-        "<p style='color:#3773A6; font-size:150%; text-align:center '>Welcome to you detective ! 🕵️ <br> Pour cet escape game vous aurez besoin de télécharger les fichiers laissés à votre disposition. <br> Ceux-ci vous aideront à trouver des codes et des indices vous permettant de trouver un code final à saisir ci-dessous. <br> N'oubliez pas que chaque fichier doit être utilisé pour arriver à découvrir le code final ! <br><br><br><br></p>"
-        , unsafe_allow_html=True)
-
-    download_files()
-
-    # Section pour proposer un code secret
-
-    st.markdown("<h2 style='color:#A69937; font-size:250%; text-align:center '><br><br>👁️ Test your Code 👁️</h2>", unsafe_allow_html=True)
-    st.markdown("<p style='color:#A69937; font-size:100%; text-align:center '>Vous aurez besoin de cliquer sur le bouton 'Valider' pour tester votre code.</h2>", unsafe_allow_html=True)
-
-    code_secret = st.text_input("Entrez le code secret:")
-
-    if st.button("Valider le Code Secret"):
-        validate_secret_code(code_secret)   
-
-def save_uploaded_file(uploaded_file):
-    file_path = os.path.join("downloads", uploaded_file.name)
-    with open(file_path, "wb") as file:
-        file.write(uploaded_file.read())
-    st.success(f"Fichier téléchargé avec succès: {uploaded_file.name}")
-
-def validate_secret_code(code_secret):
-    # Valider le code secret avec le code secret attendu
-    if code_secret == CODE_SECRET_ATTENDU:
-        st.success("Code secret validé avec succès!")
-        st.balloons()
-    elif code_secret == code_etape_agent_id:
-        st.error("Voyons! Cela serait bien trop simple ! Il faut chercher encore")
-    elif code_secret == code_etape_cesar:
-        st.error("On tient quelque chose, mais il semble que ce soit crypté !")
-    else:
-        st.error("Tu n'y es pas du tout...")
-
-def download_files():
-    files = os.listdir("downloads")
-    if not files:
-        st.warning("Aucun fichier disponible pour le téléchargement.")
-        return
-
-    st.info("Cliquez sur les liens ci-dessous pour télécharger vos fichiers", icon="👇")
-    with st.spinner("Téléchargement en cours..."):
-        for file_name in files:
-            file_path = os.path.join("downloads", file_name)
-            st.markdown(get_binary_file_downloader_html(file_name, file_path), unsafe_allow_html=True)
-
-def get_binary_file_downloader_html(label, file_path):
-    with open(file_path, 'rb') as file:
-        data = file.read()
-    b64 = base64.b64encode(data).decode()
-    custom_html = f'<a href="data:file/txt;base64,{b64}" download="{label}"> {label}</a>'
-    return custom_html
-
-if __name__ == "__main__":
-    main()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+)
 
 ################## OLD ##################
 
